@@ -1,0 +1,135 @@
+#center-wrapper form { line-height: 1.5; }
+form h3 { font-size: 14px; }
+.form-item .description { margin: 0; }
+#s-privacy-settings-form select { /* rtl-processor:ignore */ float: right; height: 20px; padding: 1px; }
+[dir="rtl"] #s-privacy-settings-form select { float: left; }
+.field-family .form-item { border-top: 1px solid #cedbe8; padding: 10px 5px; margin:0; }
+.field-family .form-item:hover { background: #eef3f8; }
+.field-family .field-family .form-item { padding-inline-start: 30px; margin: 0; }
+ul.block { padding: 0 2px; }
+ul.block li { padding: 20px 11px; border-bottom: 1px solid #cedbe8; font-size: 13px; }
+#s-privacy-settings-form h3 { color: #5387B6; background: url('/sites/all/themes/schoology_theme/images/icons.png?6a6922e60f127556') no-repeat 0 -133px; padding-inline-start: 25px; }
+#s-privacy-settings-form .privacy-area-wrapper { margin-inline-start: 30px; }
+.privacy-area-wrapper .infotip { position: absolute; height: 14px; margin-inline-start: 5px; }
+#s-privacy-settings-form .privacy-area-wrapper { height: 20px; padding: 3px 10px; width: 375px; }
+#s-privacy-settings-form .form-item { margin: 0; }
+#s-privacy-settings-form label { font-size: 11px; }
+#s-user-privacy-settings-form { margin-bottom: 25px; padding: 10px; }
+#s-user-privacy-settings-form .submit-buttons { text-align: start; }
+#s-school-privacy-settings-form .pre-submit { text-align: center; padding: 15px 0; margin-top: 25px; border-top: 1px solid #ddd; }
+
+/* Notifications */
+.notification-title { text-align: start; font-size: 13px; width: 60%; }
+.notifications-header { padding: 10px 10px 15px; line-height: 2; }
+#s-user-set-notifications-form table { margin-bottom: 25px; width: 75%; }
+#s-user-set-notifications-form tbody th { text-align: start; border-bottom: 1px solid #eaeaea; height: 25px; font-weight: normal; padding: 10px 0; }
+#s-user-set-notifications-form tbody td { border-bottom: 1px solid #eaeaea; }
+#s-user-set-notifications-form thead tr:hover{ background: #fff; }
+#s-user-set-notifications-form .form-checkbox { top: 2px; }
+#s-user-set-notifications-form { padding: 0 10px; }
+#s-user-set-notifications-form thead th { border-bottom: 1px solid #c7c7c7; padding-bottom: 7px; text-align: start;}
+.cellphone-container { /* rtl-processor:ignore */ float: right; width: 18%; background: url('/sites/all/themes/schoology_theme/images/sms.png?6a6922e60f127556') no-repeat 10px -90px #eef3f8; padding: 15px 15px 20px; padding-inline-start: 31px; }
+[dir="rtl"] .cellphone-container { float: left; background-position-x: calc(100% - 10px); padding-bottom: 15px; }
+.cellphone-container .sms-settings { /* rtl-processor:ignore */ float: right; font-weight: normal; }
+.cellphone-container .sms-number {
+    color: #677583;
+    font-weight: bold;
+    display: block;
+    padding: 3px 0;
+}
+.cellphone-container .sms-carrier {
+    color: #677583;
+}
+.cellphone-container .delete-option { /* rtl-processor:ignore */ float: right; margin-inline-end: 10px; }
+[dir="rtl"] .cellphone-container .delete-option { float: left; }
+.cellphone-container .device { padding-top: 10px; }
+.notifications-header .clickable { font-weight: normal; }
+form#s-user-profile-editor-textmessages-form .carrier-select{ display: none; }
+#s-user-profile-editor-textmessages-form .description { margin: 3px 0 0; margin-inline-start: 100px; }
+#s-user-profile-editor-textmessages-form { height: 200px; padding: 15px 20px; }
+#s-user-profile-editor-textmessages-form label { /* rtl-processor:ignore */ float: left; width: 100px; margin-top: 5px; }
+[dir="rtl"] #s-user-profile-editor-textmessages-form label { float: right; }
+#s-user-profile-editor-textmessages-form .form-item { margin-bottom: 10px; }
+#s-user-profile-editor-textmessages-form .form-text { width: 210px; }
+#s-user-profile-editor-textmessages-form #edit-carrier { width: 218px; }
+#s-user-profile-editor-textmessages-form #edit-cell-number-wrapper { margin-top: 10px; }
+#sms-remove-btn { color: #327cbb; margin: -2px 0 8px; margin-inline-start: 100px; display: inline-block; cursor: pointer; }
+#edit-carrier-wrapper .description { margin: 3px 0 0; margin-inline-start: 100px; }
+#s-user-set-notifications-form th.email-notify { text-indent: 22px; width: 20%; background: url('/sites/all/themes/schoology_theme/images/sms.png?6a6922e60f127556') no-repeat 0 2px #fff; }
+[dir="rtl"] #s-user-set-notifications-form th.email-notify { background-position-x: 100%; }
+#s-user-set-notifications-form th.sms-notify { text-indent: 16px; width: 15%; background: url('/sites/all/themes/schoology_theme/images/sms.png?6a6922e60f127556') no-repeat -4px -52px #fff; }
+#s-user-custom-notifications-form { padding: 0; max-height: 300px; }
+#s-user-custom-notifications-form label { display: block; padding: 10px 20px; border-bottom: 1px solid #eaeaea; }
+#s-user-custom-notifications-form #edit-select-all-wrapper label { border-color: #c7c7c7; background: #eef3f8; }
+#s-user-custom-notifications-form .form-item { margin: 0; }
+#s-user-custom-notifications-form .realm-settings-wrapper label { font-weight: bold; }
+#s-user-set-notifications-form .form-item { display: inline; word-wrap: normal; }
+#s-user-set-notifications-form .edit-custom-link { position: absolute; margin: 4px 0 0; margin-inline-start: -30px; font-weight: normal; }
+#s-user-privacy-settings-form label { /* rtl-processor:ignore */ float: left; width: 120px; padding: 20px 0;  }
+[dir="rtl"] #s-user-privacy-settings-form label { float: right; }
+#s-user-privacy-settings-form label.option, #s-user-privacy-settings-form table label { float: none; width: auto; padding: 0; }
+#edit-global-search-show-wrapper { padding: 20px 0; border: 1px solid #eaeaea; border-width: 1px 0; margin-bottom: 20px; }
+.realm-type-course .form-checkbox-title, .realm-type-group .form-checkbox-title { background: url('/sites/all/themes/schoology_theme/images/icons_sprite.png?6a6922e60f127556') no-repeat 10px -19px; padding: 2px 0 2px; padding-inline-start: 33px; }
+[dir="rtl"] .realm-type-course .form-checkbox-title, [dir="rtl"] .realm-type-group .form-checkbox-title { background-position-x: calc(100% - 10px); }
+.realm-type-group .form-checkbox-title { background-position: 10px -132px; }
+#s-user-custom-notifications-form #edit-select-all-wrapper .form-checkbox-title { padding-inline-start: 10px; font-weight: bold; }
+#s-user-set-notifications-form select.notif-setting-select { width: 100px; }
+.notif-setting-select.ui-selectmenu-menu { overflow: hidden; }
+.mobile-push-container .push-device { padding: 10px 15px 0; padding-inline-start: 31px; margin: 10px -15px 0; margin-inline-start: -31px; border-top: 1px solid #fff; }
+
+/* API */
+#s-api-register-form { margin-top: 10px; }
+#s-api-register-form label { display: block; float: none; }
+#s-api-register-form .form-item { margin-bottom: 10px; }
+#s-api-register-form .submit-span-wrapper { margin-top: 10px; margin-inline-end: 10px; margin-bottom: 10px; }
+#s-api-register-form .description.warning {
+    margin-bottom: 15px;
+    color: #CD1D27;
+}
+#s-api-register-form .g-recaptcha { margin-top: 10px; }
+
+/* Privacy Settings - Course, Group, and System Settings */
+.default-homepage-block,
+.privacy-block { margin: 15px 0 25px; }
+.parent-visitor-block { width: 600px; }
+.parent-visitor-block .description .infotip { text-decoration: underline; }
+.default-homepage-block .description,
+.parent-visitor-block .description p { margin: 10px 0; }
+.visitor-settings-checkboxes { padding: 0 15px; }
+.visitor-settings-checkboxes.disabled { opacity: .5; filter: alpha(opacity=50); }
+.visitor-settings-checkboxes .infotip { display: inline-block; height: 16px; vertical-align: top; }
+.visitor-settings-checkboxes #edit-visitor-settings-course-lock-settings-wrapper, .visitor-settings-checkboxes #edit-visitor-settings-group-lock-settings-wrapper, .visitor-settings-checkboxes #edit-visitor-settings-school-lock-settings-wrapper { border-top: 1px solid #ddd; padding-top: 5px; }
+.privacy-block h3 .adv-option-btn { vertical-align: top; }
+.privacy-block h3 .infotip .adv-option-btn { margin-inline-end: 0; }
+
+/* Parent/Visitor Settings Tooltips */
+.formatted-tooltip { text-align: start; }
+.settings-explanation .preview-block { border-top: 1px solid #555; border-bottom: 1px solid #393939; padding: 10px 0; }
+.settings-explanation .preview-block:first-child { border-top: 0 none; }
+.settings-explanation .preview-block:last-child { border-bottom: 0 none; }
+.settings-explanation .s-common-block { margin: 0; }
+
+/* Parent - My Children Settings */
+.mail-schedule-form .account-settings-header { font-size: 14px; padding: 5px 0; border-bottom: 1px solid #c7c7c7; margin: 10px 0; }
+.mail-schedule-form .parent-digest-intro { margin: 10px 0; }
+.mail-schedule-form .form-item { margin-bottom: 10px; padding-inline-start: 180px; }
+.mail-schedule-form .form-item label { /* rtl-processor:ignore */ float: left; margin-top: 5px; width: 170px; margin-inline-start: -180px; }
+[dir="rtl"] .mail-schedule-form .form-item label { float: right; }
+.mail-schedule-form .form-item .form-select { width: 218px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; }
+.mail-schedule-form .form-item .form-text { width: 206px; }
+.mail-schedule-form .container-inline-date { margin-bottom: 10px; padding-inline-start: 180px; overflow: hidden; }
+.mail-schedule-form .container-inline-date .form-item { margin-bottom: 0; padding-inline-start: 0; }
+.mail-schedule-form .container-inline-date .form-item .form-item { }
+.mail-schedule-form .container-inline-date .description { display: none; }
+.mail-schedule-form .container-inline-date #edit-time-of-day-datepicker-popup-0-wrapper { display: none; }
+.mail-schedule-form .day-of-week-container { margin-bottom: 10px; padding-inline-start: 180px; }
+.mail-schedule-form .day-of-week-container .meeting-days-element { clear: none; }
+.mail-schedule-form .day-of-week-container .meeting-days-element .form-item { margin-bottom: 0; padding-inline-start: 0; }
+.mail-schedule-form .day-of-week-container .meeting-days-element .form-item .form-item label { width: 30px; margin-inline-start: 0; margin-top: 0; }
+.mail-schedule-form .submit-buttons { text-align: start; padding-inline-start: 180px; }
+
+.privacy-search-settings label { /* rtl-processor:ignore */ float: left; width: 120px; }
+
+[dir="rtl"] .privacy-search-settings label { float: right; }
+
+.privacy-search-settings .form-item .option { float: none; width: auto; padding: 0; }

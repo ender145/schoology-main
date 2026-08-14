@@ -1,0 +1,24 @@
+<!-- register your template in pds-components.html -->
+<dom-module id="pds-icon">
+  <template>
+    <template is="dom-if" if="{{isSvgIcon}}">
+      <img src="{{path}}/{{name}}.svg" class="pds-icon-gradient">
+    </template>
+    <style>
+      .pds-icon-svg {
+        height: var(--pds-icon-svg-height);
+        width: var(--pds-icon-svg-width);
+        fill: var(--pds-icon-svg-fill);
+      }
+    </style>
+    <svg aria-hidden="true" focusable="false" class$="pds-icon-[[name]] pds-icon-svg [[scopeClass]]">
+      <use xlink:href=""></use>
+    </svg>
+  </template>
+  <script>
+    // register your template in pds-components.html
+    (function() {
+        powerSchoolDesignSystemToolkit.polymerUtils.registerPdsIconDefinition();
+    })();
+  </script>
+</dom-module>

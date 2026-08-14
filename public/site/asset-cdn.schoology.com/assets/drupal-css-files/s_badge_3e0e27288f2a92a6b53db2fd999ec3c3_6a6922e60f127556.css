@@ -1,0 +1,358 @@
+.s-badges-view .with-tabs #center-top { background: #fff; }
+.s-badges-view #tabs-wrapper { display: none; }
+.s-badges-view #content-wrapper { padding-top: 10px; }
+
+/* Full Screen View */
+.badges-full-screen #badges-fullscreen-btn { background-position: 5px -22px; }
+.badges-full-screen #sidebar-left, .badges-full-screen #sub-nav, .badges-full-screen #bottom-bar, .badges-full-screen #center-top { display: none; }
+.badges-full-screen #main-content-wrapper { border: none; margin: 0; width: auto; padding: 0 20px; }
+.badges-full-screen #wrapper, .badges-full-screen #s-badge-course-wrapper, .badges-full-screen #s-badge-course { width: 100%; max-width: none; }
+.badges-full-screen #container { width: 100%; margin: 0; padding: 0; }
+.badges-full-screen .submit-span-wrapper { margin-inline-start: 10px; }
+.badges-full-screen #s-badge-table-main .sticky-header-wrapper { width: 100%; }
+.badges-full-screen #content-wrapper { padding-bottom: 0; }
+
+/* Badge Shapes */
+.badge-color, .badge-shape { overflow: hidden; text-indent: -9999px; }
+.badge-size-large { height: 115px; width: 115px; background-repeat: no-repeat; background-position: center; }
+.badge-size-large.badge-shape-circle-blank { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-circle-blank.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-circle.badge-color-red { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-circle-red.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-circle.badge-color-orange { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-circle-orange.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-circle.badge-color-yellow { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-circle-yellow.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-circle.badge-color-green { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-circle-green.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-circle.badge-color-blue { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-circle-blue.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-circle.badge-color-purple { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-circle-purple.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-circle.badge-color-pink { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-circle-pink.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-circle.badge-color-black { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-circle-black.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-circle.badge-color-white { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-circle-white.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-seal.badge-color-red { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-seal-red.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-seal.badge-color-orange { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-seal-orange.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-seal.badge-color-yellow { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-seal-yellow.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-seal.badge-color-green { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-seal-green.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-seal.badge-color-blue { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-seal-blue.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-seal.badge-color-purple { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-seal-purple.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-seal.badge-color-pink { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-seal-pink.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-seal.badge-color-black { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-seal-black.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-seal.badge-color-white { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-seal-white.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-star.badge-color-red { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-star-red.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-star.badge-color-orange { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-star-orange.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-star.badge-color-yellow { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-star-yellow.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-star.badge-color-green { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-star-green.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-star.badge-color-blue { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-star-blue.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-star.badge-color-purple { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-star-purple.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-star.badge-color-pink { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-star-pink.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-star.badge-color-black { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-star-black.png?6a6922e60f127556'); }
+.badge-size-large.badge-shape-star.badge-color-white { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-large-star-white.png?6a6922e60f127556'); }
+.badge-size-small { height: 50px; width: 50px; background-repeat: no-repeat; background-position: center; }
+.badge-size-small.badge-shape-circle-blank { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-blank.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-red { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-red.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-orange { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-orange.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-yellow { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-yellow.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-green { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-green.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-blue { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-blue.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-purple { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-purple.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-pink { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-pink.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-black { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-black.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-white { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-white.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-red { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-red.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-orange { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-orange.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-yellow { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-yellow.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-green { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-green.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-blue { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-blue.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-purple { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-purple.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-pink { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-pink.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-black { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-black.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-white { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-white.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-red { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-red.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-orange { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-orange.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-yellow { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-yellow.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-green { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-green.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-blue { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-blue.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-purple { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-purple.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-pink { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-pink.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-black { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-black.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-white { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-white.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle-blank.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-blank-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-red.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-red-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-orange.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-orange-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-yellow.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-yellow-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-green.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-green-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-blue.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-blue-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-purple.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-purple-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-pink.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-pink-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-black.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-black-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-circle.badge-color-white.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-circle-white-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-red.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-red-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-orange.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-orange-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-yellow.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-yellow-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-green.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-green-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-blue.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-blue-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-purple.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-purple-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-pink.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-pink-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-black.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-black-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-seal.badge-color-white.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-seal-white-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-red.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-red-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-orange.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-orange-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-yellow.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-yellow-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-green.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-green-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-blue.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-blue-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-purple.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-purple-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-pink.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-pink-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-black.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-black-gray_bg.png?6a6922e60f127556'); }
+.badge-size-small.badge-shape-star.badge-color-white.badge-gray-bg { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-small-star-white-gray_bg.png?6a6922e60f127556'); }
+.badge-size-icon { height: 32px; width: 32px; background-repeat: no-repeat; background-position: center; }
+.badge-size-icon.badge-shape-circle-blank { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-circle-blank.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-circle.badge-color-red { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-circle-red.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-circle.badge-color-orange { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-circle-orange.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-circle.badge-color-yellow { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-circle-yellow.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-circle.badge-color-green { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-circle-green.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-circle.badge-color-blue { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-circle-blue.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-circle.badge-color-purple { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-circle-purple.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-circle.badge-color-pink { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-circle-pink.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-circle.badge-color-black { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-circle-black.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-circle.badge-color-white { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-circle-white.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-seal.badge-color-red { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-seal-red.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-seal.badge-color-orange { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-seal-orange.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-seal.badge-color-yellow { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-seal-yellow.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-seal.badge-color-green { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-seal-green.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-seal.badge-color-blue { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-seal-blue.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-seal.badge-color-purple { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-seal-purple.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-seal.badge-color-pink { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-seal-pink.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-seal.badge-color-black { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-seal-black.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-seal.badge-color-white { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-seal-white.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-star.badge-color-red { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-star-red.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-star.badge-color-orange { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-star-orange.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-star.badge-color-yellow { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-star-yellow.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-star.badge-color-green { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-star-green.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-star.badge-color-blue { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-star-blue.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-star.badge-color-purple { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-star-purple.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-star.badge-color-pink { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-star-pink.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-star.badge-color-black { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-star-black.png?6a6922e60f127556'); }
+.badge-size-icon.badge-shape-star.badge-color-white { background-image: url('/sites/all/themes/schoology_theme/images/badges/badge-icon-star-white.png?6a6922e60f127556'); }
+
+/* Badge View */
+.badge-shape-wrapper { position: relative; z-index: 0; }
+.badge-shape-wrapper .badge-crop-preview { position: absolute; inset-inline-start: 0; inset-inline-end: 0; top: 0; bottom: 0; }
+.badge-shape-wrapper .badge-image, .badge-shape-wrapper .badge-image-infotip, .badge-shape-wrapper .badge-image-overlay { position: absolute; inset-inline-start: 0; inset-inline-end: 0; top: 0; bottom: 0; z-index: 1; }
+.badge-shape-wrapper .badge-image-overlay { z-index: 2; }
+
+/* Scheme Form */
+.s-badge-form-inputs .form-item, .s-badge-form-inputs .s-form-item { padding-inline-start: 115px; margin-bottom: 10px; min-height: 1em; }
+.s-badge-form-inputs .form-item label, .s-badge-form-inputs .s-form-label { width: 110px; /* rtl-processor:ignore */ float: left; margin-inline-start: -115px; font-weight: bold; cursor: default; }
+[dir="rtl"] .s-badge-form-inputs .form-item label, [dir="rtl"] .s-badge-form-inputs .s-form-label { float: right; }
+.s-badge-form-inputs .form-text, .s-badge-form-inputs .form-textarea { width: 423px; }
+.s-badge-form-inputs .badge-image-upload-wrapper { padding-inline-start: 125px; min-height: 115px; }
+.s-badge-form-inputs .badge-image-upload-wrapper .form-item { padding-inline-start: 0; } /* fix for the basic uploader input element */
+.s-badge-form-inputs .badge-image-preview { position: relative; /* rtl-processor:ignore */ float: left; margin-inline-start: -125px; width: 115px; height: 115px; border: 1px solid #c7c7c7; }
+[dir="rtl"] .s-badge-form-inputs .badge-image-preview { float: right; }
+.s-badge-form-inputs .badge-image-cell { display: table-cell; vertical-align: middle; text-align: center; }
+.s-badge-form-inputs .badge-image-preview .badge-image-cell { height: 115px; width: 115px; }
+.s-badge-form-inputs .badge-image-preview .ajax-loader-preview { position: absolute; inset-inline-start: 50%; top: 50%; margin-top: -4px; margin-inline-start: -15px; }
+.s-badge-form-inputs #attachment-file { clear: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+.s-badge-form-inputs #attachment-file-chunked { clear: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+.s-badge-form-inputs #attachments-added-container .progressShowHide { display: none; }
+.s-badge-form-inputs #attachments-added-container .progressName, .s-badge-form-inputs #attachments-added-container .progressContainer { word-break: break-all; }
+.s-badge-form-inputs .attachments-added-container .progressShowHide { display: none; }
+.s-badge-form-inputs .attachments-added-container .progressName, .s-badge-form-inputs .attachments-added-container .progressContainer { word-break: break-all; }
+.s-badge-form-inputs .badge-shape { margin: 0 10px 0; margin-inline-start: 0; display: inline-block; cursor: pointer; padding: 3px; border: 1px solid #fff; }
+.s-badge-form-inputs .badge-shape.active-shape { border-color: #ddd; }
+.s-badge-form-inputs .badge-color { height: 20px; width: 20px; border: 1px solid; margin: 0 5px 5px; margin-inline-start: 0; display: inline-block; cursor: pointer; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; }
+.s-badge-form-inputs .badge-color.badge-color-red { background-color: #f1607c; border-color: #c12e47;  }
+.s-badge-form-inputs .badge-color.badge-color-orange { background-color: #f69164; border-color: #c8522a; }
+.s-badge-form-inputs .badge-color.badge-color-yellow { background-color: #efd66a; border-color: #bb910a; }
+.s-badge-form-inputs .badge-color.badge-color-green { background-color: #b5d77a; border-color: #599018; }
+.s-badge-form-inputs .badge-color.badge-color-blue { background-color: #8bd3f1; border-color: #267897; }
+.s-badge-form-inputs .badge-color.badge-color-purple { background-color: #a48bc1; border-color: #66579c; }
+.s-badge-form-inputs .badge-color.badge-color-pink { background-color: #ef95bf; border-color: #c25184; }
+.s-badge-form-inputs .badge-color.badge-color-black { background-color: #6d6d6d; border-color: #333333; }
+.s-badge-form-inputs .badge-color.badge-color-white { background-color: #f1f1f2; border-color: #bbbdbf; }
+.s-badge-form-inputs .badge-color.active-color { background-image: url('/sites/all/themes/schoology_theme/images/check-icons.png?6a6922e60f127556'); background-repeat: no-repeat; background-position: 5px -16px; }
+
+/* Scheme Preview */
+.s-badge-preview-panel .preview-heading { margin-top: 0; }
+.s-badge-preview-panel .s-badge-preview { border: 1px solid #c7c7c7; padding: 10px; }
+.s-badge-preview-panel .badge-title { font-weight: bold; text-align: center; font-size: 14px; }
+.s-badge-preview-panel .badge-message { text-align: center; }
+.s-badge-preview-panel .badge-shape-wrapper { height: 115px; width: 115px; margin: 0 auto; }
+.s-badge-preview-panel .badge-shape-wrapper .ajax-loader-crop { position: absolute; inset-inline-start: 50%; top: 50%; margin-inline-start: -15px; margin-top: -4px; }
+.s-badge-preview-panel .badge-shape-wrapper .badge-crop-preview { clip: rect(0px, 115px, 115px, 0px); }
+
+/* Create - Edit Popup */
+.s-badge-scheme-popup .s-badge-form { padding: 15px 20px; overflow: hidden; }
+.s-badge-scheme-popup .s-badge-form-inputs { /* rtl-processor:ignore */ float: left; width: 550px; margin-top: 26px; }
+[dir="rtl"] .s-badge-scheme-popup .s-badge-form-inputs { float: right; }
+.s-badge-scheme-popup .s-badge-preview-panel { /* rtl-processor:ignore */ float: right; width: 200px; }
+[dir="rtl"] .s-badge-scheme-popup .s-badge-preview-panel { float: left; }
+.s-badge-scheme-popup #s-library-collection-template-form { padding: 0; }
+.s-badge-scheme-popup #s-library-collection-template-form label { width: 110px; }
+.s-badge-scheme-popup #s-library-collection-template-form textarea { width: 423px; }
+
+/* Badge Table */
+#s-badge-course-wrapper { position: relative; }
+.s-badge-header { margin-bottom: 10px; }
+.s-badge-header, .s-badge-header-buttons { height: 26px; }
+.s-badge-header-buttons .fullscreen-btn, .s-badge-header-buttons .gradebook-badge-switcher, .s-badge-header-buttons #badge-add-options { /* rtl-processor:ignore */ float: left; margin-inline-end: 4px; }
+[dir="rtl"] .s-badge-header-buttons .fullscreen-btn, [dir="rtl"] .s-badge-header-buttons .gradebook-badge-switcher, [dir="rtl"] .s-badge-header-buttons #badge-add-options { float: right; }
+.s-badge-header .action-links-wrapper { position: relative; }
+.s-badge-header-buttons .infotip { /* rtl-processor:ignore */ float: left; padding: 0; width: 26px; background: url('/sites/all/themes/schoology_theme/images/gray-btn-bg.gif?6a6922e60f127556') repeat-x #e0e1e0; border: 1px solid #999; cursor: pointer; -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); }
+[dir="rtl"] .s-badge-header-buttons .infotip { float: right; }
+#badges-fullscreen-btn { background: url('/sites/all/themes/schoology_theme/images/icons-sprite-tools.png?6a6922e60f127556') no-repeat 5px 4px; height: 24px; width: 26px; /* rtl-processor:ignore */ float: right; }
+[dir="rtl"] #badges-fullscreen-btn { float: left; }
+
+#s-badge-table-names { /* rtl-processor:ignore */ float: left; line-height: 15px; width: 170px; overflow: hidden; margin-inline-end: -1px; }
+
+[dir="rtl"] #s-badge-table-names { float: right; }
+
+.transparent-pixel { height: 1px; display: none; }
+.badge-course-table-cell { border: 1px solid #ddd; height: 42px; width: 164px; text-align: start; }
+th.badge-course-table-cell, #s-badge-table-main .sticky-header th { height: 100px; border-color: #ddd; vertical-align: middle; background: #f2f2f2; }
+.badge-course-table-cell .student-info { padding: 3px 2px; width: 164px; }
+.badge-course-table-cell .student-info .student-name { line-height: 14px; height: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: normal; position: relative; width: 159px; margin: 0 auto; }
+.badge-course-table-cell .student-info .student-name a { font-weight: normal; color: #2f71b7; }
+.even .badge-course-table-cell { background: #f9f9f9; }
+
+/* No Badges */
+#s-badge-course.no-badges-wrapper { display: table; vertical-align: top; }
+#s-badge-course.no-badges-wrapper #s-badge-table-names { float: none; display: table-cell; vertical-align: top; }
+#s-badge-course.no-badges-wrapper #s-badge-table-main.no-badges { height: auto; display: table-cell; vertical-align: top; border-inline-start: 0 none; }
+
+#s-badge-table-main { overflow: auto; overflow-y: hidden; }
+#s-badge-table-main::-webkit-scrollbar { width: 8px; height: 8px; }
+#s-badge-table-main::-webkit-scrollbar-thumb { background-color: #777; -webkit-border-radius: 4px; border-radius: 4px; }
+#s-badge-table-main::-webkit-scrollbar-track { background-color: #eee; -webkit-border-radius: 4px; border-radius: 4px; }
+#s-badge-table-main .sticky-header-wrapper { position: fixed; top: 0; overflow: hidden; z-index: 1; width: 809px; }
+#s-badge-table-main .sticky-header { position: static !important; width: 100%; }
+#s-badge-table-main .sticky-header .badge-action-links { display: none; }
+#s-badge-table-main .badge-course-table-cell { width: 88px; }
+th.badge-course-main-header { height: 100px; }
+.badge-course-main-header .badge-wrapper { width: 78px; height: 90px; padding: 5px; position: relative; }
+body #wrapper #s-badge-table-main .badge-course-main-header .infotip.hide-qmark { cursor: default; }
+
+.badge-course-main-header .badge-shape-wrapper { margin: 0 auto 5px; }
+.badge-course-main-header .badge-title { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-wrap: normal; text-align: center; }
+.badge-course-main-header .badge-action-links { position: absolute; inset-inline-end: 0; bottom: 0; }
+.badge-course-main-header .badge-action-links .action-links-unfold { border: 1px solid transparent; background: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; width: 24px; }
+.badge-course-main-header .badge-action-links .action-links-unfold span { width: 12px; height: 20px; background: url('/sites/all/themes/schoology_theme/images/btn-sprite.png?6a6922e60f127556') no-repeat -3px -577px; }
+.badge-course-main-header .badge-action-links .action-links-unfold.active { background: #555; border: 1px solid #333; }
+.badge-course-main-header .badge-action-links .action-links-unfold.active span { background-position: -3px -595px; }
+.student-badge-cell.clickable:hover { background-image: url('/sites/all/themes/schoology_theme/images/connected.png?6a6922e60f127556'); background-repeat: no-repeat; background-position: center -23px; }
+.student-badge-cell.awarded, .student-badge-cell.awarded:hover { background-image: url('/sites/all/themes/schoology_theme/images/connected.png?6a6922e60f127556'); background-repeat: no-repeat; background-position: center 12px; }
+
+/* Unpopulated Badge Table */
+#s-badge-table-main.no-badges { border: 1px solid #ddd; padding: 15px 20px; }
+.no-badges-message-header { margin-bottom: 5px; }
+.no-badges-message-message { margin: 3px 0; }
+#s-badge-table-main.no-badges .schoology-badges-header { display: none; }
+#s-badge-table-main.no-badges #s-badge-schoology-badge-form { margin-top: 15px; }
+#s-badge-table-main.no-badges #schoology-badges-gradebook-view { height: 330px; overflow: auto; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+#s-badge-table-main.no-badges #schoology-badges-add-to-course tr:first-child td.schoology-badge-table-cell { border-top: 0 none; }
+#s-badge-table-main.no-badges .submit-buttons { padding: 10px 0; text-align: start; }
+#s-badge-table-main.no-badges .submit-buttons .cancel-btn { display: none; }
+#schoology-badges-add-to-course, #schoology-badges-gradebook-view-headers { width: 100%; }
+#schoology-badges-add-to-course .schoology-badge-details { text-align: start; }
+#schoology-badges-add-to-course .schoology-badge-image { width: 70px; text-align: center; }
+#schoology-badges-add-to-course .badge-title { font-weight: bold; font-size: 14px; margin: 0; }
+#schoology-badges-add-to-course .badge-message { margin: 0; padding-top: 3px; }
+#schoology-badges-add-to-course .schoology-badge-table { width: 100%; }
+#schoology-badges-add-to-course .schoology-badge-table-cell, #schoology-badges-gradebook-view-headers .schoology-badge-table-cell { border-top: 1px solid #ddd; padding: 5px 0; }
+#schoology-badges-gradebook-view-headers .schoology-badge-table-cell { padding: 10px 0; }
+#schoology-badges-add-to-course .schoology-badge-checkbox, #schoology-badges-gradebook-view-headers .schoology-badge-checkbox { text-align: center; padding-inline-start: 5px; width: 12px; }
+#schoology-badges-add-to-course .schoology-badge-checkbox .form-item, #schoology-badges-gradebook-view-headers .schoology-badge-checkbox .form-item { margin-bottom: 0; }
+#schoology-badges-add-to-course .schoology-badge-image, #schoology-badges-gradebook-view-headers .schoology-badge-image { text-align: center; width: 70px; }
+#schoology-badges-add-to-course .schoology-badge-details, #schoology-badges-gradebook-view-headers .schoology-badge-details { text-align: start; padding-inline-end: 5px; }
+#schoology-badges-add-to-course .existing .schoology-badge-table-cell { opacity: 0.5; filter: alpha(opacity=50); }
+#schoology-badges-add-to-course .existing .schoology-badge-image img { filter: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxmaWx0ZXIgaWQ9ImdyYXlzY2FsZSI+CiAgICA8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMC4zMzMzIDAuMzMzMyAwLjMzMzMgMCAwIDAuMzMzMyAwLjMzMzMgMC4zMzMzIDAgMCAwLjMzMzMgMC4zMzMzIDAuMzMzMyAwIDAgMCAwIDAgMSAwIi8+CiAgPC9maWx0ZXI+Cjwvc3ZnPg==#grayscale); filter: gray; -webkit-filter: grayscale(1); }
+
+/* User Profile - Side Menu */
+.my-badges-block { margin-bottom: 15px; }
+.my-badges-block h3 a { font-weight: normal; /* rtl-processor:ignore */ float: right; font-size: 12px; }
+[dir="rtl"] .my-badges-block h3 a { float: left; }
+.my-badges-block .right-block-big { overflow: hidden; }
+.right-block-big .badge-wrapper { /* rtl-processor:ignore */ float: left; width: 25%; margin: 5px 0; }
+[dir="rtl"] .right-block-big .badge-wrapper { float: right; }
+.right-block-big .badge-wrapper .badge-shape-wrapper { margin: 0 auto; }
+
+/* User Profile - Badge List */
+.badge-user-list-filter-wrapper { height: 37px; padding-top: 0; margin-top: -5px; }
+.badge-user-list-filter-wrapper .action-links-wrapper { /* rtl-processor:ignore */ float: left; margin-inline-end: 4px; }
+[dir="rtl"] .badge-user-list-filter-wrapper .action-links-wrapper { float: right; }
+.badge-user-list-table { width: 100%; border-top: 1px solid #ddd; position: relative; }
+.badge-user-list-table .badge-list-table-cell { padding: 10px 0; vertical-align: top; border-bottom: 1px solid #eaeaea; }
+.badge-user-list-table .badge-icon-cell { width: 60px; }
+.badge-user-list-table .badge-details-cell { text-align: start; }
+.badge-user-list-table .badge-title { font-size: 14px; }
+.badge-user-list-table .badge-actions-cell { padding: 3px 0 3px; padding-inline-start: 5px; text-align: end; width: 60px; }
+.badge-user-list-table .action-links-wrapper { margin-top: 8px; }
+.badges-empty-wrapper { text-align: center; }
+.badge-profile-list-more-btn-wrapper { margin-top: 5px; }
+.badge-profile-list-more-btn-wrapper a { background: url('/sites/all/themes/schoology_theme/images/arrow-down.png?6a6922e60f127556') no-repeat 0 5px; padding-inline-start: 15px; }
+.badge-profile-list-more-btn-wrapper img { margin-top: -10px; }
+
+/* User Profile - Badge View Popup */
+.s-badge-view-popup .popups-body { padding: 10px 15px; }
+.s-badge-view-popup .badge-list-detail-wrapper { border-top: 1px solid #ddd; text-align: center; font-size: 11px; }
+.s-badge-view-popup .badge-list-detail-wrapper p { font-size: 11px; }
+
+/* Badge Popups View */
+.popup-s-content-badge .badge-shape-wrapper { margin: 0 auto; }
+
+.s-badge-schoology-badges-popup .schoology-badges-header { font-weight: bold; font-size: 14px; padding-inline-start: 10px; }
+.s-badge-schoology-badges-popup form { padding: 0 20px; }
+.s-badge-schoology-badges-popup .badge-title { font-weight: bold; font-size: 14px; margin: 0; }
+.s-badge-schoology-badges-popup .badge-message { margin: 0; padding-top: 3px; }
+.s-badge-schoology-badges-popup .schoology-badge-table { width: 100%; }
+.s-badge-schoology-badges-popup .schoology-badge-table-cell { border-top: 1px solid #ddd; padding: 5px 0; }
+.s-badge-schoology-badges-popup .schoology-badge-checkbox { text-align: center; padding-inline-start: 5px; }
+.s-badge-schoology-badges-popup .schoology-badge-image { text-align: center; width: 70px; }
+.s-badge-schoology-badges-popup .schoology-badge-details { text-align: start; padding-inline-end: 5px; }
+
+/* Edit Badge Image */
+.imgareaselect-outer, .imgareaselect-selection, .imgareaselect-border1, .imgareaselect-border2 { z-index: 1901 !important; }
+.imgareaselect-outer.badge-cropped, .imgareaselect-selection.badge-cropped, .imgareaselect-border1.badge-cropped, .imgareaselect-border2.badge-cropped { display: block !important; }
+.imgareaselect-selection { border: 0 none !important; padding: 1px; opacity: 1 !important; filter: alpha(opacity=100) !important; background: none !important; }
+.imgareaselect-handle { position: absolute; font-size: 0px; width: 5px; height: 5px; background-color: #fff; border: solid 1px #000; opacity: 0.5; filter: alpha(opacity=50); }
+.imgareaselect-handle.tl { top: 0; inset-inline-start: 0; }
+.imgareaselect-handle.tm { top: 0; inset-inline-start: 50%; margin-inline-start: -3.5px; }
+.imgareaselect-handle.tr { top: 0; inset-inline-end: 0; }
+.imgareaselect-handle.ml { top: 50%; inset-inline-start: 0; margin-top: -3.5px; }
+.imgareaselect-handle.mr { top: 50%; inset-inline-end: 0; margin-top: -3.5px; }
+.imgareaselect-handle.bl { bottom: 0; inset-inline-start: 0; }
+.imgareaselect-handle.bm { bottom: 0; inset-inline-start: 50%; margin-inline-start: -3.5px; }
+.imgareaselect-handle.br { bottom: 0; inset-inline-end: 0; }
+
+.popups-box.s-badge-schoology-badges-popup .schoology-badges-header { font-weight: bold; font-size: 14px; padding-inline-start: 10px; }
+.popups-box.s-badge-schoology-badges-popup form { padding: 0 20px; }
+.popups-box.s-badge-schoology-badges-popup .badge-title { font-weight: bold; font-size: 14px; margin: 0; }
+.popups-box.s-badge-schoology-badges-popup .badge-message { margin: 0; padding-top: 3px; }
+.popups-box.s-badge-schoology-badges-popup .schoology-badge-table { width: 100%; }
+.popups-box.s-badge-schoology-badges-popup .schoology-badge-table-cell { border-top: 1px solid #ddd; padding: 5px 0; }
+.popups-box.s-badge-schoology-badges-popup .schoology-badge-checkbox { text-align: center; padding-inline-start: 5px; }
+.popups-box.s-badge-schoology-badges-popup .schoology-badge-image { text-align: center; width: 70px; }
+.popups-box.s-badge-schoology-badges-popup .schoology-badge-details { text-align: start; padding-inline-end: 5px; }
+
+.popups-box.s-badge-edge-other-items-popup .popups-body-inner-has-buttons { max-height: 450px; overflow-y: auto; width: 100%; }
+.popups-box.s-badge-edge-other-items-popup .badge-icon-cell { padding-inline-start: 10px; }
+.popups-box.s-badge-edge-other-items-popup .badge-details-cell { padding-inline-end: 10px; }
+.popups-box.s-badge-edge-other-items-popup p { margin: 0; }
+.popups-box.s-badge-edge-other-items-popup .badge-title-link { font-size: 14px; font-weight: bold; }
+.popups-box.s-badge-edge-other-items-popup .badge-message, .s-badge-edge-other-items-popup .badge-award-details { margin-top: 3px; }
+.popups-box.s-badge-edge-other-items-popup .badge-award-details { font-size: 11px; }
+
+body #center-top { padding: 10px 0; }
+body .realm-top-right { top: 10px; }
+
+/* No Members */
+.no-members-overlay { position: absolute; top: 102px; inset-inline-start: 0; inset-inline-end: 0; bottom: 0; background: #fff; background: rgba(255,255,255,0.67); z-index: 3; -webkit-transform: translateZ(0); }
+.no-members-message { padding: 96px 20px 20px; text-align: center; font-weight: bold; }
+.no-members-message .inline-icon.medium { margin-inline-end: 5px; vertical-align: baseline; margin-bottom: -5px; }
+.overlay-active #s-badge-table-main { overflow: hidden; }
+.overlay-active #s-badge-table-main .sticky-header-wrapper { display: none; }
+
+/* Accessibility - Keyboard Focus Indicators */
+.s-badge-header-buttons .infotip:focus-visible,
+#badge-add-options .action-links-unfold:focus-visible,
+.badge-course-main-header .badge-action-links .action-links-unfold:focus-visible,
+.student-badge-cell.clickable:focus-visible {
+  outline: 2px solid #327cbb;
+  outline-offset: 2px;
+}

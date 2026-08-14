@@ -1,0 +1,26 @@
+.s-share-connect-form { padding: 10px; }
+.connect-users-list .header { border: 1px solid #D0D0D0; padding: 8px 10px 5px; margin-top: 10px; background: whiteSmoke; }
+.s-share-connect-form .message { display: block; padding: 5px 0; }
+.connect-users-list .select-all-wrapper { /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] .connect-users-list .select-all-wrapper { float: right; }
+.connect-users-list .selected-count { /* rtl-processor:ignore */ float: right; }
+[dir="rtl"] .connect-users-list .selected-count { float: left; }
+.connect-users-list .selected-num { margin-inline-end: 0.4em; }
+.connect-users-list .list { overflow-y: auto; max-height: 150px; border: 1px solid #D0D0D0; border-top: 0 none; margin-bottom: 15px; }
+.connect-users-list .users-list .form-item { padding: 10px; border-top: 1px solid #D0D0D0; margin: 0; }
+.connect-users-list .users-list .form-item:first-child { border-top: 0 none; }
+.connect-users-list .users-list .form-item label { padding-inline-start: 16px; display: block; overflow: hidden; }
+.connect-users-list .users-list .form-item .form-checkbox.users-list { /* rtl-processor:ignore */ float: left; margin-inline-start: -16px; margin-top: 14px; }
+[dir="rtl"] .connect-users-list .users-list .form-item .form-checkbox.users-list { float: right; }
+.connect-users-list .invite-list .form-item .form-checkbox.users-list { margin-top: 2px;}
+.connect-users-list .form-checkbox.users-list { display: inline-block; vertical-align: middle; }
+.connect-users-list .form-checkbox-title { overflow: hidden; display: block; margin-inline-start: 4px; }
+.connect-users-list .header .form-checkbox-title { display: inline; }
+.connect-users-list .name { font-weight: bold; }
+.connect-users-list .name, .connect-users-list .email { display: block; }
+.connect-users-list .connect-user-option { padding-inline-start: 50px; overflow: hidden; }
+.connect-users-list .connect-user-option .user-picture { /* rtl-processor:ignore */ float: left; margin-inline-start: -47px; }
+[dir="rtl"] .connect-users-list .connect-user-option .user-picture { float: right; }
+.connect-users-list .connect-user-option .user-picture .picture { width: 40px; padding-inline-end: 0; }
+.connect-users-list .connect-user-option .user-picture .picture img { width: 40px; height: 40px; }
+.connect-users-list .connect-user-option .user-name { padding-top: 12px; }

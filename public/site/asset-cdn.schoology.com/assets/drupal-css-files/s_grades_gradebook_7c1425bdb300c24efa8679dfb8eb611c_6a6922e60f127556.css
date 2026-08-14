@@ -1,0 +1,153 @@
+.s-grades-course-list { list-style: none; margin: 0; padding: 0; }
+.s-grades-course-item { margin: 0; padding: 0; }
+.gradebook-course-grades table { text-align: start; width: 100%; border: 1px solid #ddd; }
+.gradebook-course-grades th, .gradebook-course-grades td { text-align: start; }
+
+.category-header { padding: 15px 0 8px; padding-inline-start: 15px; background: #fff; color: #9a9fa8; border-top: 1px solid #ddd; }
+.assignment-title { padding: 8px 0 8px; padding-inline-start: 15px; border: none; width: 400px; }
+.gradebook-course-title a, .attendance-course-title a { font-size: 14px; }
+
+.category-footer { padding: 0 10px; text-align: end; background: #fff; border: none; font-weight: bold; }
+.period-total { text-align: end; font-size: 14px; font-weight: bold; border-top: 1px solid #ddd; }
+.period-total th { padding: 15px 0 15px; padding-inline-start: 15px; text-align: end; }
+.period-total .row-comment { font-weight: normal; }
+.category-footer span { color: #5AB135; }
+
+.gradebook-course-grades tbody tr.dropped * { text-decoration: line-through; }
+.gradebook-course-grades tbody tr.dropped td.row-comment { text-decoration: none; }
+
+.course-grade { padding: 15px 10px 15px; font-size: 12px; text-align: center; border: none; background: #fff; }
+
+.gradebook-course-title, .attendance-course-title { margin: 5px 0; }
+.gradebook-course-title a:hover, .attendance-course a:hover { text-decoration: none; }
+.gradebook-course-title a:focus-visible { outline: 2px solid #327cbb; outline-offset: 2px; }
+.gradebook-course-title .arrow { background: url('/sites/all/themes/schoology_theme/images/icons_sprite_med.png?6a6922e60f127556') no-repeat 0 -150px; height: 20px; width: 20px; padding: 0; /* rtl-processor:ignore */ float: left; margin-inline-start: 0; margin-inline-end: 10px; }
+[dir="rtl"] .gradebook-course-title .arrow { float: right; }
+.attendance-course-title a { background: url('/sites/all/themes/schoology_theme/images/icons_sprite_med.png?6a6922e60f127556') no-repeat 0 -850px; padding: 1px 0 2px; padding-inline-start: 30px; }
+[dir="rtl" ] .attendance-course-title a { background-position-x: 100%; }
+.attendance-course-attendance table { margin: 0; }
+.attendance-course-attendance { margin-inline-start: 29px; padding: 10px 0; display: none; }
+
+.gradebook-course, .attendance-course { padding: 12px 0; border-top: 1px solid #eaeaea; width: 100%; }
+.grades-empty { color: #9a9fa8; padding: 15px 0; text-align: center; }
+.past-gp-header { margin-top: 15px; padding-bottom: 4px; }
+#report-title { padding: 15px 0; font-size: 14px; }
+.assignment-title a:link, .assignment-title a:visited, .assignment-title { font-weight: normal; }
+
+.gradebook-course-grades table.sticky-header { margin: 0; width: auto; border-inline-end: 0 none; border-bottom: 0 none; }
+.gradebook-course-grades a:visited { font-weight: normal; }
+.gradebook-course-grades span.has-dropbox-icon, .gradebook-course-grades .has-discussion-comment, .gradebook-course-grades .common-assessment-icon { position: absolute; display: inline-block; background: url('/sites/all/themes/schoology_theme/images/drop-item.png?6a6922e60f127556') no-repeat 0 0; height: 14px; width: 12px; inset-inline-end: 0; top: 1px; }
+.gradebook-course-grades span.has-dropbox-icon.dropbox-icon-inline-image-wrapper {background: none;}
+.gradebook-course-grades .has-discussion-comment { background: url('/sites/all/themes/schoology_theme/images/edit-discussion.png?6a6922e60f127556') no-repeat; }
+.gradebook-course-grades .has-discussion-comment.discussion-comment-inline-icon-wrapper {background: none;}
+.gradebook-course-grades .common-assessment-icon { background: url('/sites/all/themes/schoology_theme/images/edit-assessment.png?6a6922e60f127556') no-repeat; }
+.gradebook-course-grades .grade-wrapper { position: relative; padding: 0 28px; }
+
+.gradebook-course-grades .exception { display: inline-block; margin-inline-start: 10px; }
+.gradebook-course-grades .exception-icon { display: inline-block; width: 14px; height: 12px; margin-inline-start: -4px; margin-bottom: -2px; }
+.gradebook-course-grades .exception-icon.missing  { background: url('/bundle/react-common/images/icons/missing.png?44d45766?6a6922e60f127556') no-repeat 50% 50%; }
+.gradebook-course-grades .exception-icon.incomplete  { background: url('/bundle/react-common/images/icons/incomplete.png?44d45766?6a6922e60f127556') no-repeat 50% 50%; }
+.gradebook-course-grades .exception-icon.excused  { background: url('/bundle/react-common/images/icons/excused.png?44d45766?6a6922e60f127556') no-repeat 50% 50%; }
+.gradebook-course-grades .exception-icon.submitted,
+.gradebook-course-grades .exception-icon.late,
+.gradebook-course-grades .exception-icon.absent {
+    background-position: initial;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+}
+
+.gradebook-course-grades .exception-icon.submitted  {
+    background-image: url('/bundle/react-common/images/svg/submitted.svg?6a6922e60f127556');
+}
+.gradebook-course-grades .exception-icon.absent  {
+    background-image: url('/bundle/react-common/images/svg/absent.svg?6a6922e60f127556');
+}
+.gradebook-course-grades .exception-icon.late  {
+    background-image: url('/bundle/react-common/images/svg/late.svg?6a6922e60f127556');
+}
+.gradebook-course-grades .exception-text { display: inline-block; padding-inline-start: 10px; font-size: 12px; font-weight: normal; color: #626D76; }
+
+
+.category-footer-title { padding: 10px 0 15px; text-align: end !important; }
+.category-footer-grade { padding: 10px 0 15px; }
+.grades-table thead th { border-bottom: 1px solid #ddd; text-align: center; }
+
+.grading-period-title .description { font-weight: normal; font-size: 11px; }
+.period-total-grade { font-size: 14px; text-align: end; font-weight: bold; }
+.period-total-grade span { color: #5AB135; }
+.period-total-grade .numeric-grade-value span, .category-footer-grade .numeric-grade-value span { font-weight: normal; font-size: 11px; }
+.course-grade-inner, .course-total-grade { background: #f2f2f2; border: 1px solid #f2f2f2; padding: 15px 10px; font-size: 14px; font-weight: normal; }
+.course-total-grade { font-size: 15px; text-align: center; border-color: #ddd; background: #f2f2f2; margin-top: 15px; }
+.course-total-grade span { font-weight: bold; color: #5AB135; }
+.course-total-grade .numeric-grade-value span { font-size: 12px; font-weight: normal; }
+.course-total-grade .course-comment { font-size: 11px; padding: 5px; }
+.course-total-grade .course-comment-label { color: #333; }
+.assignment-row .numeric-grade-value span { color: #9a9fa8; }
+
+#gradebook-print { padding-top: 10px; }
+.user-grades .user-name { font-weight: bold; font-size: 14px; padding-top: 7px; }
+.user-grades-info { padding-inline-start: 60px; min-height: 46px; }
+.user-grades-info .picture { /* rtl-processor:ignore */ float: left; margin-inline-start: -60px; margin-top: -7px; }
+[dir="rtl"] .user-grades-info .picture { float: right; }
+
+.grades-table td { text-align: center; }
+.grades-table td.row-comment, .grades-table td.category-header { text-align: start; }
+.grades-table td.category-header { font-weight: bold; }
+.grades-table .s-grades-rubric-grading-launch-btn .grading-rubric-launch-icon { border: none; width: auto; margin-inline-start: -25px; padding-inline-start: 30px; padding-top: 0; padding-bottom: 0; background-position: 5px -925px; line-height: normal; }
+.final-assignment-grade .assignment-title a { font-size: 13px; font-weight: bold; }
+.grades-table thead .gradebook-assignment-header { width: 400px; text-align: start; padding: 10px 0; }
+.grades-table .gradebook-grade-header, .grades-table .gradebook-maxpts-header { width: 75px; text-align: center; padding: 15px 0; }
+.grades-table .gradebook-comment-header { width: 200px; text-align: start; }
+.grading-period-grades h3 { padding: 15px 0 15px; padding-inline-start: 15px; font-size: 14px; color: #5AB135; position: absolute; }
+.grading-period-grades.future-period h3 { color: #9a9fa8; border: 1px solid #ddd; margin-bottom: -1px; position: static; }
+.gradebook-course-grades { margin-inline-start: 31px; display: none; padding: 0 0 10px; }
+.grading-period-grades.no-period h3 { color: #9a9fa8; }
+.grading-period-grades { padding-top: 15px; }
+.no-period .period-total-grade span, .no-period .period-total-grade { color: #9a9fa8; }
+.dropped td { color: #9a9fa8; }
+.download-grade-wrapper { position: absolute; inset-inline-end: 0; top: 15px; }
+.download-card-wrapper { position: absolute; inset-inline-end: 0; top: 15px; }
+body #wrapper span.infotip.unpublished, #wrapper .grades-table .row-grade .infotip.unpublished { display: inline-block; padding-inline-end: 12px; margin-inline-end: -11px; color: #9a9fa8; padding-top: 0; padding-bottom: 0; cursor: default; }
+.infotip.unpublished .unpublished-icon, .grades-table .row-grade .infotip.unpublished .unpublished-icon { display: inline-block; height: 11px; width: 11px; vertical-align: middle; background: url('/sites/all/themes/schoology_theme/images/hidden-icon.png?6a6922e60f127556') no-repeat 0 0; /* rtl-processor:ignore */ float: right; margin-top: 2px; margin-inline-end: -12px; }
+[dir="rtl"] .infotip.unpublished .unpublished-icon, [dir="rtl"] .grades-table .row-grade .infotip.unpublished .unpublished-icon { float: left; }
+.period-total-grade .infotip.unpublished .unpublished-icon { margin-top: 4px; }
+.course-total-grade .infotip.unpublished .unpublished-icon { margin-top: 5px; }
+
+#past-selector { height: 27px; margin-bottom: 5px; }
+#past-selector li { /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] #past-selector li { float: right; }
+#past-selector li a { width: 70px; text-align: center; }
+
+.grades-table .student-stats, .template-title .student-stats { margin-inline-start: 5px; }
+.grades-table .assignment-title .infotip { background: url('/sites/all/themes/schoology_theme/images/tags.png?6a6922e60f127556') no-repeat right 0; padding: 1px 20px 1px; padding-inline-start: 0; display: inline-block; }
+
+/* parent view */
+.gradebook-child-selector a { font-size: 13px; }
+.gradebook-child-selector li { padding: 3px 0; }
+
+/* PDF export */
+#gradebook-print .gradebook-course-grades { display: block; }
+
+/* export */
+#s-grades-export-form-wrapper { padding: 5px 10px; }
+#s-grades-export-form .form-menu { background: none; border: none; }
+#s-grades-export-form .active-courses, #s-grades-export-form .active-comment-periods .form-checkboxes { border: 1px solid #c7c7c7; max-height: 120px; overflow-y: auto; margin: 0 10px 15px; }
+#s-grades-export-form .active-comment-periods .form-checkboxes { margin: 5px 0 0; }
+#s-grades-export-form .active-comment-periods { padding: 0 10px 5px; }
+#s-grades-export-form .active-courses .form-item, #s-grades-export-form-1 .form-checkboxes .form-item, #s-grades-export-form .active-comment-periods .form-checkboxes .form-item { padding: 10px; border-bottom: 1px solid #eaeaea; margin: 0; }
+#s-grades-export-form .form-checkbox-title, #s-grades-export-form-1 .form-checkbox-title { background: url('/sites/all/themes/schoology_theme/images/icons_sprite.png?6a6922e60f127556') no-repeat 5px -313px; padding: 2px 0 2px; padding-inline-start: 28px; font-weight: bold; }
+#s-grades-export-form .active-comment-periods .form-checkbox-title { background:url('/sites/all/themes/schoology_theme/images/attendance_comment.png?6a6922e60f127556') no-repeat 7px 4px; }
+#s-grades-export-form .period-courses { margin: 0; padding: 0 0 10px; padding-inline-start: 34px; border-bottom: 1px solid #eaeaea; border-top: 1px solid #fff; margin-top: -1px; }
+#s-grades-export-form .period-courses .form-item { padding: 5px 0; border: none; }
+#s-grades-export-form .period-courses .form-checkbox-title { background: url('/sites/all/themes/schoology_theme/images/icons_sprite.png?6a6922e60f127556') no-repeat 5px -22px; }
+#s-grades-export-form-1 .form-checkboxes { border: 1px solid #c7c7c7; max-height: 180px; overflow-y: auto; margin-top: 5px; }
+#s-grades-export-form-1 .form-checkbox-title { background: url('/sites/all/themes/schoology_theme/images/icons_sprite.png?6a6922e60f127556') no-repeat 4px -955px; padding: 2px 0 2px; padding-inline-start: 25px; font-weight: bold; }
+[dir="rtl"] #s-grades-export-form-1 .form-checkbox-title { background-position-x: calc(100% - 4px); }
+#s-grades-export-form-1 .gray { margin-inline-start: 8px; }
+#s-grades-export-form-1 { padding: 10px; }
+#s-grades-export-form-1 div.indentation { padding: 0; margin: 0; width: 10px; }
+
+#content-wrapper .grade-book-message-icon { margin: 12px -2px; }

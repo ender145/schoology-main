@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Access rights validated</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <script type="text/javascript">
+            var reverseProxyUrl = "";
+        </script>
+        <script type="text/javascript" src="&#x2f;am/js/SanitizeUrl/sanitize-url.min.js?v=1" defer></script>
+        <script type="text/javascript" src="&#x2f;am/js/JsXSS/xss.min.js?v=1" defer></script>
+        <script type="text/javascript" src="&#x2f;am/js/UrlPolyfill/url-polyfill.min.js?v=1" defer></script>
+        <script type="text/javascript"
+                src="&#x2f;am/js/saml2-read-v3.js"
+                defer></script>
+    </head>
+    <body>
+        <form method="post"
+              action="&#x2f;am&#x2f;saml2&#x2f;jsp&#x2f;saml2error.jsp&#x3f;errorcode&#x3d;UnableToGetAuthnReq&amp;httpstatuscode&#x3d;500&amp;errormessage&#x3d;Unable&#x25;20to&#x25;20get&#x25;20AuthnRequest.">
+            <input id="saml2Request" type="hidden" name="saml2Request" value="" />
+        </form>
+    </body>
+</html>

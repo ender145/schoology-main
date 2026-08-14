@@ -1,0 +1,18 @@
+{
+  "name": "local-lms-clone",
+  "version": "1.1.0",
+  "description": "Local FCPS Schoology frontend + live backend proxy",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:skip-auth": "node server.js --skip-auth",
+    "auth": "python python/auth.py"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.21.0",
+    "http-proxy-middleware": "^3.0.2"
+  },
+  "license": "MIT"
+}

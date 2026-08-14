@@ -1,0 +1,53 @@
+
+<!-- register in pds-components.html -->
+
+​
+<dom-module id="pds-app-switcher">
+  <template>
+    <!--<style include="shared-widget-styles"></style>-->
+    <!--<style include="pds-app-switcher-styles"></style>-->
+    <div class$="pds-app-switcher-contents pds-app-action {{scopeClass}}">
+      <button class$="pds-app-switcher-trigger pds-button-square pds-is-active {{conditionalClass('pds-app-switcher-open', isPopoverShowing)}}"
+              id="pds-app-switcher"
+              type="button"
+              aria-label$="{{translate(redrawTrigger, 'pds|app switcher|Open App Switcher')}}">
+        <pds-icon name="app-switcher" scope-class="pds-app-switcher">
+        </pds-icon>
+      </button>
+        <!-- The new popovers need an element reference, typically this div would only have an id if
+             its interactable. We dont need a conditional logic to show or hide the popover
+             the popover engine takes care of that stuff -->
+        <div id="app-switcher-popover">
+          <span class="pds-popover-header">{{translate(redrawTrigger, 'pds|app switcher|PowerSchool Applications')}}</span>
+          <div class="app-switcher-product-list">
+            <template is="dom-repeat" items="{{apps}}" as="app" index-as="appIndex">
+              <a href$="{{app.url}}"
+                 target="_blank"
+                 id="product-id-{{app.id}}"
+                 on-click="hidePopover">
+                <template is="dom-if" if="{{!isDefined('productIcon', app)}}" restamp="true">
+                  <span class="pds-app-switcher-swatch"
+                        style$="background-color: {{app.color}};">
+                    {{app.initials}}
+                  </span>
+                </template>
+                <template is="dom-if" if="{{isDefined('productIcon', app)}}" restamp="true">
+                  <img src="{{app.productIcon}}" class="pds-app-switcher-swatch-custom">
+                </template>
+
+                <span class="pds-app-switcher-app-name">
+                  {{app.name}}
+                </span>
+              </a>
+            </template>
+          </div>
+        </div>
+    </div>
+  </template>
+  <script>
+    //register this file in pds-components.html
+    (function() {
+      powerSchoolDesignSystemToolkit.polymerUtils.registerPdsAppSwitcher();
+    })();
+  </script>
+</dom-module>

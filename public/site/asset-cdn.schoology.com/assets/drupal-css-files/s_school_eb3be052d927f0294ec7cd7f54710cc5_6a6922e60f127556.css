@@ -1,0 +1,229 @@
+.upcoming-events-list { list-style: none; }
+.s-edge-feed .empty { text-align: center; padding: 35px 0; color: #9a9fa8; }
+#calendar .empty { padding: 0; }
+.upcoming-event h4 { border: none; }
+.upcoming-event { padding-top: 5px; }
+#s-school-faculty-display-form input#edit-search, #edit-dept-submit { float: none; margin: 0; }
+#edit-search-wrapper, .filter-wrapper-left, #edit-departments-wrapper { /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] #edit-search-wrapper, [dir="rtl"] .filter-wrapper-left, [dir="rtl"] #edit-departments-wrapper { float: right; }
+.filter-wrapper-right { /* rtl-processor:ignore */ float: right; }
+[dir="rtl"] .filter-wrapper-right { float: left; }
+#s-school-faculty-display-form .filter-wrapper-right .submit-span-wrapper { display: none; }
+#s-school-faculty-display-form { margin-top: 10px; }
+.faculty-listing { /* rtl-processor:ignore */ float: left; width: 100%; }
+[dir="rtl"] .faculty-listing { float: right; }
+#edit-departments { width: 175px; }
+.faculty-item-container-right { /* rtl-processor:ignore */ float: right; text-align: end; }
+[dir="rtl"] .faculty-item-container-right { float: left; }
+.faculty-item-container-right a { display: block; font-weight: normal; }
+#s-school-faculty-display-form #edit-search { width: 200px; height: 17px; }
+.pager { clear: both; }
+.upcoming-events-list .empty { border-top: 1px solid #cedbe8; }
+#s-update-create-form { padding: 10px 0; }
+#s-update-create-form #edit-cancel { display: none; }
+.school-discussions h3, .tag-selector h3 { margin-bottom: 5px; }
+.faculty-item-container-right a { text-transform: capitalize; }
+.faculty-listing .faculty-info { display: table-cell; height: 46px; vertical-align: middle; width: 355px; }
+.faculty-name { font-size: 13px; color: #9a9fa8; }
+.faculty-position { color: #9a9fa8; }
+.faculty-department a { font-weight: normal; }
+.profile-picture-wrapper { position: relative; z-index: 100; }
+.info-tab { padding-bottom: 10px; }
+body .info-tab { border-top: none; margin-top: -10px; }
+body.s-event-profile-page .info-tab { border-top: 1px solid #eaeaea; margin-top: 0; }
+body #left-nav { margin-top: 10px; }
+#left-nav #menu-s-main .menu a span { background-image: url('/sites/all/themes/schoology_theme/images/icons_sprite_med.png?6a6922e60f127556'); background-repeat: no-repeat; }
+a.school-profile-left-menu span { background-position: 5px -1025px; }
+.active.school-profile-left-menu span, a.school-profile-left-menu:hover span { background-position: 5px -1000px; }
+a.school-faculty-left-menu span { background-position: 5px -75px; }
+.active.school-faculty-left-menu span, a.school-faculty-left-menu:hover span { background-position: 5px -50px; }
+a.school-discussion-left-menu span { background-position: 5px -675px; }
+.active.school-discussion-left-menu span, a.school-discussion-left-menu:hover span, .menu .active-trail .school-discussion-left-menu span { background-position: 5px -650px; }
+a.school-info-left-menu span { background-position: 5px -273px; }
+.active.school-info-left-menu span, a.school-info-left-menu:hover span { background-position: 5px -248px; }
+.course-profile-left-menu { display: none; }
+#left-nav #menu-s-main .menu a.school-materials-left-menu span { background-image: url('/sites/all/themes/schoology_theme/images/icons_sprite_realm.png?6a6922e60f127556'); background-position: 5px -360px; }
+#left-nav #menu-s-main .menu .active.school-materials-left-menu span, #left-nav #menu-s-main .menu a.school-materials-left-menu:hover span { background-position: 5px -300px; }
+#sidebar-left #menu-s-main li li a { padding-inline-start: 28px; }
+h2 .school-title a.active { background: url('/sites/all/themes/schoology_theme/images/icons_sprite.png?6a6922e60f127556') no-repeat right -231px; padding-inline-end: 22px; font-size: 16px; font-weight: bold; }
+[dir="rtl"] h2 .school-title a.active { background-position-x: left; }
+.s-school-buildings-block a { background: url('/sites/all/themes/schoology_theme/images/icons_sprite.png?6a6922e60f127556') no-repeat 0 -232px; padding: 2px 2px 2px; padding-inline-start: 20px; display: block; font-weight: normal; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; word-wrap: normal; }
+[dir="rtl"] .s-school-buildings-block a { background-position-x: right; }
+#s-school-add-form { padding: 15px 20px; }
+#s-school-add-form .form-item { margin-bottom: 10px; }
+#s-school-select-form #school-add-form, #s-school-select-form #faculty-code-container, #s-school-select-form #admin-info { display: none; }
+#s-school-privacy-settings-form { padding: 15px 20px; font-size: 11px; width: 526px; }
+.school-privacy-popup .submit-buttons { width: 565px; }
+.school-title { display: block; font-size: 13px; font-weight: bold; }
+.school-title a { font-size: 12px; font-weight: normal; }
+.group-discussion .tags { margin: 3px 0 10px; }
+#event-selector .active { color: #333; font-weight: bold; }
+#right-column #event-selector { font-size: 14px; padding-bottom: 3px; }
+#event-selector span { font-weight: normal; }
+#event-selector span:hover { text-decoration: none; }
+#school-events { margin: 0 0 15px; }
+#school-events .upcoming-events { margin: 0; }
+#school-events #calendar { padding-top: 5px; }
+#school-events div#calendar, #school-events .upcoming-events h3 { display: none; }
+.action-create-event a { /* rtl-processor:ignore */ float: right; font-weight: normal; }
+[dir="rtl"] .action-create-event a { float: left; }
+.add-event { /* rtl-processor:ignore */ float: right; }
+[dir="rtl"] .add-event { float: left; }
+.upcoming-events-list h3 { border-bottom: 1px solid #c7c7c7; padding-bottom: 3px; }
+[dir="rtl"] #right-column #event-selector .active { float: right; }
+[dir="rtl"] #right-column #event-selector .mini.event-icon { float: none; }
+/* temp */
+.faculty-listing .list-item { height: 46px; }
+#s-event-add-form { margin-top: 10px; }
+#main .s-edge-feed-more-link.first img { margin-top: 9px; }
+
+/* user info request */
+#edit-enable-collection-wrapper input { /* rtl-processor:ignore */ float: left; margin: 1px 10px 0; margin-inline-start: 0; }
+[dir="rtl"] #edit-enable-collection-wrapper input { float: right; }
+#edit-enable-collection-wrapper .form-checkbox-title { font-weight: bold; font-size: 14px; }
+#edit-message-wrapper { padding: 5px 5px 5px; padding-inline-start: 24px; }
+#edit-message-wrapper label { display: block; padding-bottom: 5px; }
+#edit-message-wrapper .description { margin-top: 3px; }
+#s-school-requested-user-info-settings-form { padding: 15px; border: 1px solid #cedbe8; background: #eef3f8; }
+#s-school-requested-user-info-settings-form .submit-span-wrapper { margin-inline-start: 24px; }
+#s-school-manage-requested-user-info-form { margin-top: 30px; }
+#s-school-manage-requested-user-info-form a { font-weight: normal; }
+#s-school-manage-requested-user-info-form h2 { margin-bottom: 15px; }
+#s-school-manage-requested-user-info-form #export-btn { margin: 10px 0 0 0; }
+#s-school-manage-requested-user-info-form table { width: 100%; }
+#s-school-manage-requested-user-info-form th { border-bottom: 1px solid #c7c7c7; text-align: start; padding: 5px; }
+#s-school-manage-requested-user-info-form td { border-bottom: 1px solid #eaeaea; padding: 10px 5px; }
+#s-school-manage-requested-user-info-form .submit-span-wrapper { display: none; }
+#s-school-manage-requested-user-info-form .submit-buttons { /* rtl-processor:ignore */ float: left; border-inline-end: 1px solid #eaeaea; margin: 10px 10px 0; margin-inline-start: 0; padding-inline-end: 10px; }
+[dir="rtl"] #s-school-manage-requested-user-info-form .submit-buttons { float: right; }
+td.approval { width: 20px; }
+td.user-pic { width: 50px; }
+
+#s-school-requested-user-info-form { padding: 20px 30px; font-size: 11px; margin: 25px auto; width: 400px; border: 1px solid #c7c7c7; }
+#s-school-requested-user-info-form label { /* rtl-processor:ignore */ float: left; width: 140px; margin: 5px 5px 0; margin-inline-start: 0; }
+[dir="rtl"] #s-school-requested-user-info-form label { float: right; }
+#s-school-requested-user-info-form .form-item { margin-bottom: 10px; }
+#s-school-requested-user-info-form .form-text { width: 175px; }
+#s-school-requested-user-info-form .instructions { color: #9a9fa8; margin-bottom: 15px; }
+
+/* select school */
+.s-school-select #main-content-wrapper { max-width: 400px; width: 400px; margin: 80px auto 0 !important; border-top: 1px solid #c7c7c7; min-height: 0; padding-top: 15px; padding-bottom: 15px !important; }
+.s-school-select #content-wrapper { padding: 0; }
+.s-school-select #center-top { display: none; }
+.s-school-select #container { min-height: 300px; }
+.s-school-select #container div.messages { font-size: 12px; padding: 10px 15px; }
+.s-school-select #welcome { margin: 0; color: #4e9b45; background: url('/sites/all/themes/schoology_theme/images/register-success.gif?6a6922e60f127556') no-repeat; padding: 0 0 15px; padding-inline-start: 37px; border-bottom: 1px solid #ddd; margin-bottom: 15px; }
+.s-school-select #instructions { font-size: 18px; font-weight: bold; margin-bottom: 10px; }
+.search-wrapper .link-btn, .search-wrapper .link-btn:active {margin-inline-start: -30px; background: url('/sites/all/themes/schoology_theme/images/icons_sprite.png?6a6922e60f127556') no-repeat 7px -975px; border: none; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; width: 30px; height: 28px; padding: 0; text-indent: -9999px; }
+.search-wrapper .link-btn { vertical-align: top; }
+.search-wrapper #edit-field-wrapper { /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] .search-wrapper #edit-field-wrapper { float: right; }
+.search-wrapper .form-item { padding-inline-start: 80px; margin-bottom: 10px; }
+.search-wrapper .form-item label { /* rtl-processor:ignore */ float: left; margin-inline-start: -80px; width: 70px; margin-top: 5px; }
+[dir="rtl"] .search-wrapper .form-item label { float: right; }
+.search-wrapper .form-item select, .search-wrapper .form-item input { width: 100%; }
+.search-wrapper .form-item input { width: 96%; }
+.school-add-form-wrapper .submit-buttons { margin-inline-start: 125px; }
+#s-school-select-form .form-required { position: absolute; margin-inline-start: 7px; }
+#s-school-select-form #edit-field { width: 96%; }
+#s-school-select-form #edit-field-wrapper { display: inline-block; }
+#s-school-select-form .submit-buttons { margin-bottom: 10px; margin-inline-start: 80px; display: none; text-align: start; }
+#s-school-select-form.school-add-form-wrapper .submit-buttons { margin-inline-start: 125px; }
+#schools-wrapper { max-height: 165px; min-height: 36px; overflow-y: auto; border: 1px solid #ddd; background: #fff; padding: 0; margin-bottom: 10px; display: none; }
+#s-school-select-form #schools-wrapper { margin-inline-start: 80px; }
+#s-school-select-form #school-exists-form #schools-wrapper { margin-inline-start: 0; }
+#schools-wrapper .throbber { margin: 10px auto; }
+#schools-wrapper.loading { background: #f9f9f9 url('/sites/all/themes/schoology_theme/images/ajax-loader.gif?6a6922e60f127556') no-repeat 50% 45%; }
+#schools-wrapper div.not-listed { padding: 10px 15px; color: #9a9fa8; }
+#schools-wrapper li { border-bottom: 1px solid #eaeaea; }
+#schools-wrapper li.last { border: none; }
+#schools-wrapper li.last .school-wrapper { border-bottom: none; }
+#schools-wrapper li.highlight { background: #3875D7; color: #fff; }
+#schools-wrapper li.refine-search .refine-search { padding: 8px 5px 8px; padding-inline-start: 15px; color: #9A9FA8; }
+#schools-wrapper li.not-listed .empty { padding: 11px 5px 8px; padding-inline-start: 15px; }
+#schools-wrapper .school-wrapper { cursor: pointer; padding: 8px 5px 8px; padding-inline-start: 15px; }
+#schools-wrapper .school-name { display: inline; margin-inline-end: 10px; font-size: 14px; }
+#schools-wrapper .school-location { color: #9a9fa8; display: block; font-size: 11px; }
+#schools-wrapper .school-requesters { color: #9A9FAB; font-size: 11px; }
+#schools-wrapper .highlight .school-location, #schools-wrapper .highlight .school-requesters { color: #AABED2; }
+#schools-wrapper .add-school-popup { font-weight: bold; margin-inline-start: 7px; color: #327cbb; cursor: pointer; }
+#schools-wrapper .add-school-popup:hover { text-decoration: underline; }
+#schools-wrapper #faculty-code-container { display: none; }
+#faculty-code-container { padding: 10px 15px; background: #f9f9f9; border: 1px solid #ddd; margin-bottom: 10px; }
+#faculty-code-help-link { color: #327CBB; font-size: 11px; cursor: pointer; /* rtl-processor:ignore */ float: right; font-weight: normal; margin-top: 40px; }
+[dir="rtl"] #faculty-code-help-link { float: left; }
+#faculty-code-help-link:hover { text-decoration: underline; }
+#edit-registration-code { width: 150px; }
+.code-label { font-weight: bold; margin-bottom: 10px; }
+#edit-registration-code-wrapper label { display: none; }
+#admin-info { background: #FFFFDD; border: 1px solid #F0C020; padding: 10px 15px; margin-bottom: 10px; }
+#admin-info a { font-weight: normal; }
+#admin-info .item-list { margin-top: 10px; }
+
+/* add school & edit school popup */
+#school-add-form .form-item, #s-user-verification-addschool-form .form-item { padding-inline-start: 125px; }
+#school-add-form label, #s-user-verification-addschool-form label { /* rtl-processor:ignore */ float: left; margin: 5px 0 0; margin-inline-start: -125px; width: 120px; }
+[dir="rtl"] #school-add-form label, [dir="rtl"] #s-user-verification-addschool-form label { float: right; }
+#school-add-form .form-text, #s-user-verification-addschool-form .form-text { width: 240px; }
+#school-add-form .form-text { width: 263px; }
+#school-add-form select, #s-user-verification-addschool-form select { width: 252px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#school-add-form select { width: 275px; }
+#school-add-form .resizable-textarea, #s-user-verification-addschool-form .resizable-textarea { width: 240px; display: inline-block; }
+#school-add-form .resizable-textarea { width: 263px; }
+#school-add-form .resizable-textarea textarea, #s-user-verification-addschool-form .resizable-textarea textarea { width: 100%; }
+#school-add-form .form-item, #s-user-verification-addschool-form .form-item { margin-bottom: 10px; }
+#school-add-form, #s-user-verification-addschool-form { padding-top: 5px; }
+#school-add-form label.option, #s-user-verification-addschool-form label.option { float: none; margin: 0 0 0 0; width: auto; cursor: pointer; }
+
+/* feed filter fix */
+body .realm-filter-tool #edge-filters { margin: -24px -10px 0; margin-inline-start: 0; }
+
+/* School Requests */
+#center-wrapper .s-school-moderate-table-wrapper .sticky-header th, #center-wrapper .s-school-moderate-table-wrapper .s-school-moderate-table th { text-align: start; text-indent: 10px; padding: 7px 0; border-bottom: 1px solid #EAEAEA; }
+#center-wrapper .s-school-moderate-table-wrapper .s-school-moderate-table td { padding: 9px 10px; border-bottom: 1px solid #EAEAEA; vertical-align: top; }
+#center-wrapper .s-school-moderate-table-wrapper .s-school-moderate-table td a { font-weight: normal; }
+#center-wrapper .s-school-moderate-table-wrapper .s-school-moderate-table .active-row td { padding-bottom: 200px; }
+#center-wrapper .s-school-moderate-table-wrapper .s-school-moderate-table .active-row.with-results td { padding-bottom: 380px; }
+#center-wrapper .s-school-moderate-table-wrapper .s-school-moderate-table tbody tr:hover { background: #eef3f8; cursor: pointer; }
+#center-wrapper .s-school-moderate-table-wrapper .school-search-wrapper { display: none; }
+#center-wrapper .s-school-moderate-table-wrapper .s-school-moderate-table .active-row .school-search-wrapper { display: block; }
+#center-wrapper .s-school-moderate-table-wrapper .school-search-wrapper #s-common-school-picker-form, .s-school-moderate-table-wrapper .school-search-wrapper .action-transfer { display: inline-block; vertical-align: top; position: relative; }
+#center-wrapper .s-school-moderate-table-wrapper .school-search-wrapper #s-common-school-picker-form { width: 460px; }
+#center-wrapper .s-school-moderate-table-wrapper .school-search-wrapper .action-transfer { margin-top: 114px; }
+#center-wrapper .s-school-moderate-table-wrapper .school-search-wrapper #schools-wrapper { position: absolute; top: 155px; inset-inline-start: 80px; width: 375px; }
+#center-wrapper .s-school-moderate-table-wrapper .school-search-wrapper #schools-wrapper .school-wrapper { padding-inline-end: 15px; }
+#center-wrapper .s-school-moderate-table-wrapper .school-search-wrapper .search-wrapper #edit-field { overflow: hidden; text-overflow: ellipsis; }
+#center-wrapper .subscribed .school-wrapper { padding-inline-end: 45px !important; }
+#center-wrapper .subscribed .school-wrapper .subscribed-school { background: url('/sites/all/themes/schoology_theme/images/employee_sprite.png?6a6922e60f127556') no-repeat 0 -244px; display: inline-block; /* rtl-processor:ignore */ float: right; margin-inline-end: -30px; height: 16px; width: 16px; }
+[dir="rtl"] #center-wrapper .subscribed .school-wrapper .subscribed-school { float: left; }
+#center-wrapper .s-school-moderate-table-wrapper #edit-field-wrapper { display: block; }
+#center-wrapper .s-school-moderate-table-wrapper .pager { clear: none; margin-top: 10px; }
+#center-wrapper .s-school-moderate-table .action-transfer-li { border-top: 1px solid #ddd; margin-top: 3px; padding-top: 3px; }
+
+/* Edit School Popup */
+#s-user-verification-addschool-form { padding-top: 15px; }
+
+/* Reject School Popup */
+#s-school-reject-school-request-form textarea { display: block; width: 97%; }
+
+.school-resources #center-top { padding-bottom: 5px; border: 0 none; }
+
+#s-school-settings .action-links { min-width: 169px; z-index: 10000; }
+#s-school-settings .s-school-send-message { background-image: url('/sites/all/themes/schoology_theme/images/mail_icon.png?6a6922e60f127556'); background-position: 13px 5px; }
+#s-school-settings .s-school-edit, #s-school-settings .s-school-edit-privacy { background-image: url('/sites/all/themes/schoology_theme/images/icons_sprite_feed.png?6a6922e60f127556'); background-position: 12px -34px; }
+[dir="rtl"] #s-school-settings .s-school-edit, [dir="rtl"] #s-school-settings .s-school-edit-privacy { background-position-x: calc(100% - 12px); }
+#s-school-settings .s-school-edit-privacy { background-position: 12px -108px; }
+#s-school-settings .s-school-preview-members { background-image: url('/sites/all/themes/schoology_theme/images/icons_sprite.png?6a6922e60f127556'); background-position: 13px -1150px; }
+#s-school-settings .s-school-moderate-posts { background-image: url('/sites/all/themes/schoology_theme/images/employee_sprite.png?6a6922e60f127556'); background-position: 12px -35px; }
+
+.school-resources #collection-title { padding-inline-start: 0; }
+.school-resources .popups-box.popups-library #collection-title { padding-inline-start: 20px; }
+
+/* Edit School Pages */
+.school-editor #s-school-privacy-settings-form { width: auto; font-size: 12px; }
+.school-editor #s-school-privacy-settings-form .submit-buttons { text-align: start; border-top: 1px solid #ddd; padding-top: 20px; }
+.school-editor #s-school-add-form .submit-buttons { text-align: start; padding-inline-start: 175px; }
+
+.content-top-upper .school-breadcrumb a { font-size: 12px; font-weight: normal; }
+.content-top-upper .school-breadcrum-seperator { background: url('/sites/all/themes/schoology_theme/images/btn-sprite.png?6a6922e60f127556') 10px -682px; display: inline-block; width: 5px; height: 10px; margin: 0 5px; }
+

@@ -1,0 +1,208 @@
+/* Top header */
+#s-js-competency-book-header { height: 26px; margin: 0 0 10px; padding-top: 10px; }
+#s-js-competency-book-header .action-links-wrapper { /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] #s-js-competency-book-header .action-links-wrapper { float: right; }
+#s-js-action-competency-settings { background-image: url('/sites/all/themes/schoology_theme/images/icons_sprite_new.png?6a6922e60f127556'); background-position: 12px -894px; }
+[dir="rtl"] #s-js-action-competency-settings { background-position-x: calc(100% - 12px); }
+
+/* Outter Wrapper */
+.s-common-grid { position: relative; }
+#competency-table { overflow: hidden; -webkit-transform: translateZ(0); } /* TODO: change to generic class */
+
+/* Header/Body Wrappers */
+#grid-table-header-wrapper, #grid-table-body-wrapper { display: table; border-collapse: collapse; } /* TODO: change to generic class */
+#grid-table-header-wrapper { width: 100000000px !important; } /* Absurd width fixes zooming issue */
+#grid-table-body-wrapper { overflow: hidden; width: 100000000px; } /* Absurd width fixes zooming issue */
+#s-js-competency-book-header .link-container { /* rtl-processor:ignore */ float: left; line-height: 24px; font-weight: bold; margin-inline-end: 15px; }
+[dir="rtl"] #s-js-competency-book-header .link-container { float: right; display: flex; white-space: break-spaces; }
+#s-js-competency-book-header .link-container a { font-weight: normal; }
+#s-js-competency-book-header .infotip { padding: 0; }
+.competency-ajax-loader { position: absolute; inset-inline-end: 0; margin-top: -32px; }
+
+/* Header Columns */
+.grid-table-col-header-wrapper { display: table-cell; vertical-align: top; }
+.grid-table-col-header-wrapper.static { position: relative; z-index: 1; }
+.grid-table-col-header-wrapper { /* rtl-processor:ignore */ float: left; display: block; }
+[dir="rtl"] .grid-table-col-header-wrapper { float: right; }  /* Ready Styles */
+.static .grid-table-col-header a { font-weight: normal; margin-top: 3px; display: inline-block; }
+/* Temp */
+.grid-table-col-header-wrapper.scrollable { width: 600px; -webkit-transform: translateZ(0); } /* Transform fixes disappearing issue in Safari 7+) */
+
+#grid-table-body-wrapper .grid-table-row-wrapper.scrollable::-webkit-scrollbar { width: 8px; height: 8px; }
+#grid-table-body-wrapper .grid-table-row-wrapper.scrollable::-webkit-scrollbar-track { background-color: #eee; border-radius: 4px; }
+#grid-table-body-wrapper .grid-table-row-wrapper.scrollable::-webkit-scrollbar-thumb { border-radius: 4px; background-color: #777; }
+
+/* Body Columns */
+.grid-table-row-wrapper { display: table-cell; }
+.grid-table-row-wrapper.static { position: relative; z-index: 1; }
+.grid-table-row-wrapper { display: block; /* rtl-processor:ignore */ float: left; overflow: auto; }
+[dir="rtl"] .grid-table-row-wrapper { float: right; } /* TODO: Ready Styles */
+.grid-table-row-wrapper.static { overflow-y: hidden; z-index: 2; } /* TODO: Ready Styles */
+.grid-table-row-wrapper.active-loader .loading-overlay { top: 0 !important; bottom: 0 !important; height: auto !important; } /* set top/bottom and remove height to remove scrollbars when loading */
+/* Temp */
+.grid-table-row-wrapper.scrollable { position: relative; }
+
+/* Header */
+.grid-table-col-header { display: table-cell; vertical-align: top; }
+.grid-table-col-header .top, .grid-table-col-header .bottom { padding: 3px 5px; border: 1px solid #ddd; border-inline-start: 0 none; width: 100px; height: 35px; text-align: center; font-weight: bold; background-color: #f2f2f2; }
+.grid-table-col-header .top .alignment-name, .grid-table-col-header .top .item-title { margin: 3px 0 5px; display: block; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; word-wrap: normal; }
+.grid-table-col-header .top .s-infotip { display: block; padding: 0; }
+.static.grid-table-col-header-wrapper:first-child .grid-table-col-header .top, .static.grid-table-col-header-wrapper:first-child .grid-table-col-header .bottom { border-inline-start: 1px solid #ddd; width: 165px; text-align: start; }
+.grid-table-col-header .bottom { background-color: #f2f2f2; border-top: 0 none; line-height: 35px; }
+.grid-table-col-header .top .item-title { margin-bottom: 0; }
+.grid-table-col-header .top .item-max-points { font-weight: normal; color: #9a9fa8; font-size: 10px; }
+
+
+/* Body */
+.expectation-level-exceeds { background-color: #A1D68A; border: 1px solid #6BBB49; color: #000; }
+.expectation-level-meets { background-color: #bde2ad; border: 1px solid #83c965; color: #000; }
+.expectation-level-fail { background-color: #F2D0D0; border: 1px solid #E5ACAC; color: #000; }
+.expectation-level-not-assessed { background-color: #f2f2f2; border: 1px solid #c7c7c7; color: #000; }
+.grid-virtualization-buffer { position: absolute; height: 1px; inset-inline-start: 0; visibility: hidden; }
+.grid-table-row { display: table-row; }
+.grid-table-cell { display: table-cell; border: 1px solid #ddd; border-top: 0 none; vertical-align: middle; text-align: center; position: relative; }
+.scrollable .grid-table-cell { border-inline-start: 0 none; background-color: #fff; }
+.even .grid-table-cell { background-color: #f9f9f9; }
+.grid-table-cell-block { padding: 3px 5px; width: 100px; height: 35px;}
+.static .grid-table-cell:first-child .grid-table-cell-block  { width: 165px; }
+.grid-table-cell-inner { display: table-cell; width: 125px; height: 35px; vertical-align: middle; }
+.static .grid-table-cell:first-child .grid-table-cell-inner { padding-inline-start: 40px; text-align: start; }
+.static .grid-table-cell-inner .enrollment-name { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-wrap: normal; width: 125px; padding-top: 7px; display: block; color: #327cbb; cursor: pointer; }
+.static .grid-table-cell-inner .enrollment-name:hover { text-decoration: underline; }
+.grid-table-cell-inner .picture { width: 35px; height: 32px; margin-inline-start: -40px; padding-inline-end: 0; }
+#competency-wrapper .grid-table-cell-inner .item-count-infotip { padding: 3px; position: absolute; inset-inline-end: 0; top: 0; color: #44505d; font-size: 10px; }
+#competency-wrapper .grid-table-cell-inner .item-count-infotip:hover { cursor: default; }
+table.item-scores td { padding: 3px 0; }
+table.item-scores .item-title { text-align: start; padding-inline-start: 10px; }
+table.item-scores .item-score div { padding: 2px 5px; text-align: center; border-width: 1px; border-style: solid; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; }
+.grid-table-cell.expectation-level-fail { font-size: 14px; font-weight: bold; background-color: #F2D0D0; border-color: #E5ACAC; }
+.grid-table-cell.expectation-level-meets { font-size: 14px; font-weight: bold; background-color: #bde2ad; border-color: #83c965; }
+.grid-table-cell.expectation-level-exceeds { font-size: 14px; background-color: #A1D68A; border-color: #6BBB49; font-weight: bold; }
+.expectation-level-no-grade, .grid-table-cell.expectation-level-not-assessed { color: #9a9fa8; }
+.mastery-perc-bar-wrapper { height: 8px; width: 100px; border: 1px solid #bbb; }
+.mastery-perc-bar { height: 8px; background: #ddd; }
+
+/* Settings form */
+#s-course-competency-thresholds-form { padding: 15px 20px; }
+#s-course-competency-thresholds-form label { /* rtl-processor:ignore */ float: left; margin: 5px 10px 0; margin-inline-start: 0; }
+[dir="rtl"] #s-course-competency-thresholds-form label { float: right; }
+#s-course-competency-thresholds-form .form-text { width: 30px; }
+#s-course-competency-thresholds-form h3 { margin-bottom: 15px; }
+.competency-slider-scale { margin-bottom: -15px; text-align: end; color: #9a9fa8; font-size: 12px; }
+.competency-slider-scale span { /* rtl-processor:ignore */ float: left; text-align: center; width: 40px; }
+[dir="rtl"] .competency-slider-scale span { float: right; }
+.ui-slider.ui-slider-horizontal { height: 15px; background: #A1D68A; border: 1px solid #6BBB49; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; position: relative; margin: 0 40px 30px; }
+.ui-slider-handle { width: 20px; height: 20px; display: block; position: absolute; background: #BDE2AD; border: 1px solid #83C965; border-radius: 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; margin: -4px 0 0; margin-inline-start: -11px; }
+[dir="rtl"] .ui-slider-handle { background: #A1D68A; border: 1px solid #6BBB49; margin-inline-end: -11px; }
+.ui-slider-range:before { content: ""; background: url('/sites/all/themes/schoology_theme/images/mastery.png?6a6922e60f127556') no-repeat; height: 16px; width: 16px; position: absolute; inset-inline-start: -9px; top: 22px; }
+.ui-slider-handle:last-child { background: #A1D68A; border: 1px solid #6BBB49; }
+[dir="rtl"] .ui-slider-handle:last-child { background: #BDE2AD; border: 1px solid #83C965; }
+.ui-slider-range { position: absolute; height: 15px; background: #BDE2AD; border: 1px solid #83C965; margin-top: -1px; }
+#ui-slider-range-left { position: absolute; height: 15px; background: #F2D0D0; border: 1px solid #E5ACAC; margin: -1px 0 0; margin-inline-start: -1px; border-start-start-radius: 10px; border-start-end-radius: 0; border-end-end-radius: 0; border-end-start-radius: 10px; -moz-border-radius: 10px 0 0 10px; -webkit-border-radius: 10px 0 0 10px; }
+[dir="rtl"] #ui-slider-range-left { -moz-border-radius: 0 10px 10px 0; -webkit-border-radius: 0 10px 10px 0; }
+.percent-sign-form-wrapper, .infotip-form-wrapper { min-height: 40px; }
+.percent-sign-form-wrapper .form-item, .infotip-form-wrapper .form-item { /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] .percent-sign-form-wrapper .form-item, [dir="rtl"] .infotip-form-wrapper .form-item { float: right; }
+.percent-sign-form-wrapper .perc-sign { padding: 6px; display: inline-block; color: #9a9fa8; }
+.infotip-form-wrapper .infotip { display: inline-block; height: 16px; width: 16px; padding: 0; margin: 6px; }
+.competency-overall-setting { margin-top: 5px; border-top: 1px solid #ddd; padding-top: 15px; }
+#edit-meets-wrapper, #edit-exceeds-wrapper, #edit-num-items-wrapper { padding-inline-start: 40px; position: relative; }
+#edit-meets-wrapper:before, #edit-exceeds-wrapper:before, #edit-num-items-wrapper:before { content: ""; height: 12px; width: 12px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; background: #BDE2AD; border: 1px solid #83C965; position: absolute; inset-inline-start: 15px; margin: 6px 10px 0; margin-inline-start: 0; }
+#edit-exceeds-wrapper:before { background: #A1D68A; border: 1px solid #6BBB49; }
+#edit-num-items-wrapper:before { border: none; background: url('/sites/all/themes/schoology_theme/images/mastery.png?6a6922e60f127556') no-repeat; height: 16px; width: 16px; inset-inline-start: 14px; }
+
+/* Student Report */
+#s-js-course-competency-user-report table { width: 100%; }
+#s-js-course-competency-user-report th { text-align: start; padding: 10px 0; }
+#s-js-course-competency-user-report td, #s-js-course-competency-learning-objectives td { vertical-align: top; padding: 15px 0; border-top: 1px solid #eaeaea; }
+#s-js-course-competency-user-report .learning-objectives-column, #s-js-course-competency-learning-objectives .learning-objectives-column { width: 380px; }
+#s-js-course-competency-learning-objectives .chart-wrapper { padding-inline-start: 50px; }
+#s-js-course-competency-user-report .grade-column, #s-js-course-competency-learning-objectives .grade-column { width: 100px; text-align: center; }
+.grade-column .sortable-header-text { display: inline-block; padding-inline-end: 17px; cursor: pointer; color: #327cbb; }
+.grade-column .sortable-header-text:hover { text-decoration: underline; }
+.grade-column .sortable-header-text .sortable-header-icon { /* rtl-processor:ignore */ float: right; height: 13px; width: 13px; margin-inline-end: -17px; background-repeat: no-repeat; background-position: center; }
+[dir="rtl"] .grade-column .sortable-header-text .sortable-header-icon { float: left; }
+.grade-column .sortable-header-text .sortable-header-icon.sort-asc { background-image: url('/misc/arrow-desc.png?6a6922e60f127556'); }
+.grade-column .sortable-header-text .sortable-header-icon.sort-desc { background-image: url('/misc/arrow-asc.png?6a6922e60f127556'); }
+#s-js-course-competency-user-report .grade-column .empty { padding-top: 0; border-top: 0 none; }
+td.grade-column { font-size: 14px; font-weight: bold; }
+td.grade-column .score-value { font-size: 16px; border: none; background: none; position: relative; top: -1px; }
+td.grade-column .achieves-mastery-icon { margin-top: -1px; }
+body #wrapper .infotip.mastery-infotip { padding: 0; display: inline-block; /* rtl-processor:ignore */ float: left; margin-inline-end: -16px; }
+[dir="rtl"] body #wrapper .infotip.mastery-infotip { float: right; }
+body #wrapper .infotip.mastery-infotip:hover { cursor: default; }
+body #wrapper .grade-column .infotip.mastery-infotip { position: absolute; margin-inline-start: -25px; }
+.achieves-mastery-icon { background: url('/sites/all/themes/schoology_theme/images/mastery.png?6a6922e60f127556') no-repeat; height: 16px; width: 16px; display: inline-block; }
+.tipsy .achieves-mastery-icon { vertical-align: bottom; margin-inline-end: 4px; }
+.learning-objectives-column .term-name { font-weight: bold; font-size: 14px; margin-bottom: 5px; display: inline-block; margin-inline-end: 5px; }
+.learning-objectives-column .description { max-height: 150px; overflow-y: auto; }
+.s-js-chart-and-pager-area .empty { text-align: center; padding-top: 25px; border-top: 1px solid #eaeaea; }
+#s-js-student-mastery-report-view .s-js-chart-and-pager-area .empty { border-top: 0 none; }
+.s-js-chart-and-pager-area .empty-message { display: inline-block; background: #fff; }
+.s-js-chart-and-pager-area .empty-message .inline-icon { margin-bottom: -5px; }
+.s-js-chart-and-pager-area td.empty { padding-top: 17px; }
+.tipsy .acheived-mastery-header { padding: 10px 0; border-bottom: 1px solid #ccc; margin-bottom: 5px; }
+
+/* left menu highlight */
+#sidebar-left #left-nav .menu .expanded.active-trail .menu .active-trail-dist-2 a { color: #333; }
+
+/* recommend buttons */
+.recommend-resources-link { background: url('/sites/all/themes/schoology_theme/images/mastery.png?6a6922e60f127556') no-repeat 0 -25px; display: inline-block; height: 16px; width: 16px; margin: -3px 0; }
+#competency-table .recommend-resources-link { display: none; opacity: .75; filter: alpha(opacity=75); zoom: 1; height: 12px; width: 12px; position: absolute; background-position: -2px -50px; inset-inline-end: 2px; bottom: 5px; }
+#competency-table .grid-table-cell:hover .recommend-resources-link { display: inline-block; }
+#competency-table .recommend-resources-link:hover { opacity: 1; filter: alpha(opacity=100); }
+#competency-table .rubric-sort-opts .action-links-unfold-text { background-position: -5px -726px; height: 19px; width: 12px; }
+#competency-table .rubric-sort-opts .active .action-links-unfold-text { background-position: -5px -595px !important; }
+#competency-table .rubric-sort-opts .action-links-unfold { height: 19px; width: 19px; }
+#competency-table .rubric-sort-opts { /* rtl-processor:ignore */ float: right; margin: 5px -5px 0; margin-inline-start: -19px; }
+[dir="rtl"] #competency-table .rubric-sort-opts { float: left; }
+.rubric-sort-opts .recommend-resources-action-link { padding: 5px 25px 5px; padding-inline-start: 37px; background: url('/sites/all/themes/schoology_theme/images/mastery.png?6a6922e60f127556') no-repeat 12px -20px; color: #333; font-weight: normal; }
+.rubric-sort-opts .recommend-resources-action-link:hover { background-color: #f2f2f2; }
+
+/* Temp fullscreen-related styles */
+.s-toggle-fullscreen { display: block; /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] .s-toggle-fullscreen { float: right; }
+.s-toggle-fullscreen-btn { background: url('/sites/all/themes/schoology_theme/images/icons-sprite-tools.png?6a6922e60f127556') no-repeat 5px 4px; height: 24px; width: 26px; }
+.fullscreen-enabled .s-toggle-fullscreen-btn { background-position: 5px -22px; }
+.fullscreen-enabled #wrapper { max-width: none; }
+.fullscreen-enabled #container { margin: 0; padding: 0; width: 100%; }
+.fullscreen-enabled #main-content-wrapper { border: none; margin: 0; width: auto; padding: 0 20px; }
+.fullscreen-enabled #sidebar-left, .fullscreen-enabled #sub-nav, .fullscreen-enabled #bottom-bar, .fullscreen-enabled #center-top { display: none; }
+.fullscreen-enabled #content-wrapper { padding-bottom: 0; }
+
+/* No Members */
+.no-members-overlay { position: absolute; top: 85px; inset-inline-start: 0; inset-inline-end: 0; bottom: 0; background: #fff; background: rgba(255,255,255,0.67); z-index: 3; -webkit-transform: translateZ(0); }
+.no-members-message, .no-tags-message { padding: 96px 20px 20px; text-align: center; font-weight: bold; }
+.no-members-message .inline-icon.medium, .no-tags-message .inline-icon.medium { margin-inline-end: 5px; vertical-align: baseline; margin-bottom: -5px; }
+.overlay-active .grid-table-row-wrapper { overflow: hidden; }
+
+/* Loading */
+.s-js-grid-loading-cover { text-align: center; padding: 197px 0 198px; background: #f8f8f8; border: 1px solid #ddd; }
+.s-js-grid-loading-cover .throbber { margin: 0 auto; }
+
+/* Competency Learning Objectives Overlay */
+.chart-wrapper .highchart-obj { position: relative; }
+.chart-wrapper .highchart-obj .no-data-overlay { position: absolute; top: 0; inset-inline-start: 0; inset-inline-end: 0; bottom: 0; background: #fff; background: rgba(255,255,255,0.67); z-index: 3; -webkit-transform: translateZ(0); }
+.chart-wrapper .highchart-obj .no-data-message { padding: 70px 20px 20px; padding-inline-start: 40px; text-align: center; }
+.chart-wrapper .highchart-obj .no-data-message .no-data-message-wrapper { display: inline-block; background: #fff; color: #7e7e7e; padding: 0 10px; }
+.chart-wrapper .highchart-obj .no-data-message .inline-icon.medium { margin-inline-end: 5px; vertical-align: baseline; margin-bottom: -5px; }
+
+/* Mastery Course Selectors */
+#s-js-student-mastery-report-view #past-selector { padding: 15px 0; border-bottom: 1px solid #ddd; margin-bottom: 0; }
+#s-js-student-mastery-report-view .gradebook-course-title { padding: 15px 0 15px; padding-inline-start: 30px; border-bottom: 1px solid #ddd; margin: 0; }
+#s-js-student-mastery-report-view .gradebook-course-title .arrow { /* rtl-processor:ignore */ float: left; margin-inline-start: -30px; margin-top: -2px; }
+[dir="rtl"] #s-js-student-mastery-report-view .gradebook-course-title .arrow { float: right; }
+#s-js-student-mastery-report-view .past-gp-header { padding-bottom: 0; }
+.master-course-switcher-row { border-bottom: 1px solid #ddd; padding: 10px 0; height: 32px; padding-inline-start: 30px; }
+.master-course-switcher-row .inline-icon.course-icon { /* rtl-processor:ignore */ float: left; margin-inline-start: -30px; margin-top: 5px; }
+[dir="rtl"] .master-course-switcher-row .inline-icon.course-icon { float: right; }
+.master-course-switcher-row .select2-container { max-width: 405px; }
+.master-course-switcher-row .select2-container .select2-choice span { font-size: 14px; }
+.master-course-switcher-row .select2-offscreen { display: none; }
+#s-js-student-mastery-report-grading-period { display: inline-block; font-weight: bold; font-size: 14px; line-height: 32px; height: 32px; vertical-align: middle; max-width: 280px; overflow: hidden; text-overflow: ellipsis; word-wrap: normal; white-space: nowrap; }
+.advisor-child-view #s-js-student-mastery-report-view #past-selector { float: none; }
+
+#edit-observation-weight-wrapper label { font-weight: normal; }
+.percent-sign-form-wrapper .percent  { padding: 6px; display: inline-block; }
+
+[dir="rtl"] .tipsy-nw .tipsy-arrow { margin-inline-start: -5px; }

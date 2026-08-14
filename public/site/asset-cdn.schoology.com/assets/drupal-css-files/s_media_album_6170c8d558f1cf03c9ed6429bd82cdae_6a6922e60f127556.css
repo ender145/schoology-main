@@ -1,0 +1,187 @@
+.s_media_album .content-top, .s_media_album_edit .content-top { /* rtl-processor:ignore */ float: right; width: 33%; margin-top: -24px; }
+[dir="rtl"] .s_media_album .content-top, [dir="rtl"] .s_media_album_edit .content-top { float: left; }
+.shuffleParent  .sshuffleContainer.sufOnDrag, .shuffleParent div.sshuffleContainer:hover, .shuffleParent .mediaThumbContainer:hover { border-color: #666; }
+.sshuffleContainer span:first-child, .media-album-thumb-link span { background-position: 50% 25%; background-repeat: no-repeat; display: block; height: 108px; width: 150px; }
+.drag-icon { display: none; width: 20px; height: 20px; position: absolute; top: 5px; inset-inline-end: 5px; background: url('/sites/all/themes/schoology_theme/images/drag-reorder-icon.gif?6a6922e60f127556') no-repeat 2px 2px #444; padding: 2px; }
+.sshuffleContainer.sufOnDrag .drag-icon, div.sshuffleContainer:hover .drag-icon { display: block; }
+.sshuffleContainer:hover .album-cover-image { border-color: #666; }
+.shuffleParent-albums .drag-icon { top: 12px; inset-inline-start: 139px; }
+.shuffleParent-albums .sshuffleContainer { margin-bottom: 50px; }
+.shuffleParent-albums { /* rtl-processor:ignore */ float: left; padding-top: 20px; width: 100%; }
+[dir="rtl"] .shuffleParent-albums { float: right; }
+.album-description { padding: 15px 0; border-bottom: 1px solid #eaeaea; }
+p.empty { font-size: 12px; color: #9a9fa8; padding-top: 40px; text-align: center; }
+
+/* albums view */
+.shuffleParent-albums .album-cover-image { width: 150px; height: 108px; padding: 5px; border: 1px solid #c7c7c7; background: #fff; /* rtl-processor:ignore */ float: left; margin-inline-end: 25px; }
+[dir="rtl"] .shuffleParent-albums .album-cover-image { float: right; }
+.shuffleParent-albums .sshuffleContainer{ position: relative; }
+.shuffleParent-albums .sshuffleContainer, .shuffleParent-albums .album-icon-container { /* rtl-processor:ignore */ float: left; margin: 0 15px 20px; width: 46%; }
+[dir="rtl"] .shuffleParent-albums .sshuffleContainer, [dir="rtl"] .shuffleParent-albums .album-icon-container { float: right; }
+.shuffleParent-albums .album-title { font-size: 14px; padding-top: 15px; display: block; font-weight: bold; }
+.shuffleParent-albums a.album-cover-image:hover, a.album-cover-image:hover .album-cover-image { border-color: #666; }
+.media-counts { color: #9a9fa8; display: block; }
+.create-album-btn { position: absolute; inset-inline-end: 0; top: 38px; height: 14px; }
+.shuffleParent-albums a.album-cover-image, .shuffleParent-albums div.album-cover-image { padding: 5px; background: #fff; border: 1px solid #c7c7c7; }
+a.album-cover-image, div.album-cover-image { margin: 0 5px 10px; margin-inline-start: 0; display: block; height: 108px; width: 150px; }
+span.album-cover-image { position: absolute; margin: 0 -5px -5px; margin-inline-start: 0; }
+span.album-cover-image span { background-position: 50% 25%; background-repeat: no-repeat; display: block; height: 108px; width: 150px; }
+.album-content-table { margin: 15px 0; /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] .album-content-table { float: right; }
+.album-content-table td { padding-bottom: 15px; }
+.shuffleParent .sshuffleContainer.unpublished, .sshuffleContainer.unpublished .album-cover-image { background: #f5f5f5; }
+.sshuffleRowClear{ display: block; clear: both; }
+
+/* album view */
+.shuffleParent div.sshuffleContainer, .shuffleParent .mediaThumbContainer { width: 150px; height: 108px; /* rtl-processor:ignore */ float: left; padding: 5px; border: 1px solid #c7c7c7; background: #fff; margin: 20px 20px 20px; margin-inline-start: 0; position: relative; }
+[dir="rtl"] .shuffleParent div.sshuffleContainer, [dir="rtl"] .shuffleParent .mediaThumbContainer { float: right; }
+.media-album-header { /* rtl-processor:ignore */ float: right; margin-top: -40px; }
+[dir="rtl"] .media-album-header { float: left; }
+.album-actions .add-media-btn { margin-inline-end: 5px; /* rtl-processor:ignore */ float: right; height: 14px; }
+[dir="rtl"] .album-actions .add-media-btn { float: left; }
+.album-actions .add-media-btn span, .create-album-btn span { /* rtl-processor:ignore */ float: left; width: 20px; height: 20px; margin: -1px 4px 0; margin-inline-start: -2px; background: url('/sites/all/themes/schoology_theme/images/icons_sprite_new.png?6a6922e60f127556') no-repeat 0 -150px; }
+[dir="rtl"] .album-actions .add-media-btn span, [dir="rtl"] .create-album-btn span { float: right; }
+.album-actions .action-links-wrapper .action-links { inset-inline-end: 0; z-index: 2000; }
+.album-actions .ind-assign { /* rtl-processor:ignore */ float: right; height: 24px !important; }
+[dir="rtl"] .album-actions .ind-assign { float: left; }
+.album-actions .ind-assign a { background-position: 5px 4px !important; }
+/*.shuffleParent { padding-top: 20px; float: left; width: 100%; }*/
+p.empty-album { font-size: 14px; color: #9a9fa8; padding: 50px 0; text-align: center; }
+.caption { display: block; margin-top: 8px; color: #9a9fa8; }
+
+/* single view */
+.results-counter { font-weight: bold; padding-bottom: 5px; height: 20px; font-size: 14px; }
+.results-counter .page-next, .results-counter .page-previous { /* rtl-processor:ignore */ float: right; margin-inline-start: 8px; font-weight: normal; }
+[dir="rtl"] .results-counter .page-next, [dir="rtl"] .results-counter .page-previous { float: left; }
+.from-album-label { display: block; color: #9a9fa8; }
+.from-album-label.author { margin-top: 10px; }
+.s-media-album-content-container { background: #f5f5f5; text-align: center; margin-bottom: 15px; }
+.s-media-album-content-container img, .has-materials-player .s-media-album-content-container img { max-width: 100%; display: block; margin: 0 auto; }
+.s-media-album-content-container td img, .has-materials-player .s-media-album-content-container td img { max-width: 636px; }
+.created { color: #9a9fa8; }
+#content-caption { display: block; margin-top: 10px; }
+.content-actions .action-links-wrapper { /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] .content-actions .action-links-wrapper { float: right; }
+.content-actions .action-links-unfold { float: none; }
+.content-actions .action-links { margin: 0; }
+#edit-caption-btn { color: #327CBB; cursor: pointer; }
+.s-media-album-content-container object, .s-media-album-content-container embed { height: 342px; width: 578px; display: block; }
+#edit-caption-form { margin-top: 10px; display: none; position: relative; }
+#edit-caption-form #edit-caption { width: 175px; margin-bottom: 2px; }
+#edit-caption-form .buttons-row { display: inline-block; white-space: nowrap; vertical-align: top; }
+#edit-caption-form .submit-span-wrapper input { font-size: 11px; padding: 4px 8px 3px; height: 21px; line-height: 0; }
+#edit-caption-form #cancel-save-caption-btn { font-size: 11px; padding: 2px 5px; font-weight: bold !important; margin-inline-start: 2px; }
+body.album-single-view #right-column { padding-top: 15px; }
+body.album-single-view #right-column a { font-weight: normal; }
+#center-top { position: static; }
+#s-media-album-loading-overlay{ display: none; background-color: #d8d8d8; z-index: 40;  opacity: .7; filter: alpha(opacity=70); -ms-filter: "alpha(opacity=70)"; -khtml-opacity: .7; -moz-opacity: .7;  }
+.crop-btns-inside { display: none; }
+.content-download { padding-top: 20px; overflow: hidden; }
+.album-rightcolumn .inline-icon { /* rtl-processor:ignore */ float: left; margin-top: -5px; margin-inline-end: 10px; }
+[dir="rtl"] .album-rightcolumn .inline-icon { float: right; }
+.album-rightcolumn .attachment-image-icon .attachments-file-thumbnail a { padding: 1px; border: 1px solid #c7c7c7; background: #fff; line-height: 0; display: inline-block; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.03); -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.03); -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.03); }
+.album-rightcolumn .attachment-image-icon .attachments-file-thumbnail a:hover { border-color: #666 }
+.album-rightcolumn .tags-container { margin-top: 10px; }
+
+/* edit media */
+#s-media-album-edit-content-form .edit-thumbnail { /* rtl-processor:ignore */ float: left; margin-inline-end: 10px; }
+[dir="rtl"] #s-media-album-edit-content-form .edit-thumbnail { float: right; }
+.edit-image-container .edit-inputs label { /* rtl-processor:ignore */ float: left; width: 60px; margin: 5px 5px 0; margin-inline-start: 0; }
+[dir="rtl"] .edit-image-container .edit-inputs label { float: right; }
+.edit-image-container .edit-inputs textarea { width: 300px; height: 65px; }
+.edit-image-container { height: 110px; border-bottom: 1px solid #eaeaea; padding: 10px; margin-bottom: 5px; position: relative; }
+#s-media-album-edit-content-form .make-cover-btn { margin-inline-start: 65px; }
+#s-media-album-edit-content-form .edit-delete { position: absolute; inset-inline-end: 0; top: 15px; }
+.album-cover-label { font-weight: bold; padding: 5px 0; margin-inline-start: 65px; }
+#s-media-album-edit-content-form { width: 625px; }
+.album-back-btn { font-weight: normal; /* rtl-processor:ignore */ float: right; margin-top: 5px; }
+[dir="rtl"] .album-back-btn { float: left; }
+#container #center-wrapper div.messages.unpub-warning { margin-top: 10px; }
+.unpub-warning .link-btn { float: none; }
+#s-media-album-edit-content-form .publish-btn { float: none; }
+
+/* add media */
+#s-media-album-add-content-form { padding: 15px; }
+#sma-attachment-file { margin-bottom: 5px; padding: 0; position: relative; text-align: center; background: #f9f9f9; border: 1px solid #c7c7c7; }
+#sma-attachment-file .description { /* rtl-processor:ignore */ float: left; margin: 15px 0 0; margin-inline-start: 5px; }
+[dir="rtl"] #sma-attachment-file .description { float: right; }
+#sma-attachment-file #fsUploadProgress { margin: 0 -1px -1px; }
+#s-media-album-add-content-form .progressShowHide { display: none; }
+
+/* Comments */
+.comment { padding: 7px 0; border-bottom: 1px solid #e2e2e2; }
+.author-picture { display: none; }
+.author-picture .picture, .comment_picture .picture { width: 35px; height: 32px; padding-inline-end: 5px; }
+.comments-loading .comment { background-image: url('/sites/all/themes/schoology_theme/images/ajax-loader.gif?6a6922e60f127556'); background-repeat: no-repeat; background-position: center center; }
+.comment-contents { padding: 0 0 5px; padding-inline-start: 42px; }
+.comment .delete-btn { visibility: hidden; margin-bottom: -3px; }
+.comment:hover .delete-btn { visibility: visible; }
+.album-comments { margin-top: 8px; padding: 2px 10px; border: 1px solid #ddd; background: #f8f8f8; width: 96%; }
+.album-comments p { font-size: 12px; }
+.post-comment-form { padding: 7px 6px; }
+.post-comment-form.mouse-focus { padding: 7px 0; }
+.comment-author-name { font-weight: bold; width: 325px; }
+.comment-author { font-weight: bold; }
+.comment-comment { line-height: 1.4; }
+.s-comments-post-form .form-textarea { width: 100%; color: #9a9fa8; height: 14px; font-size: 12px; margin: 0 -6px; }
+.s-comments-post-form .form-textarea.pre-fill { height: 14px !important; }
+.s-comments-post-form .form-item div { width: 331px !important; font: 11px var(--sgy-font-default) !important; }
+.s-comments-post-form .add-comment-resize { width: 100%; color: #333; min-height: 28px !important; margin: 0 -6px; }
+.post-comment-form .submit-span-wrapper { display: none; margin-top: 5px; }
+.post-comment-form.mouse-focus .submit-span-wrapper { display: inline-block !important; float: none !important; }
+div[id^="edit-comment-"] { margin:0; }
+.s-comments-post-form .mouse-focus div[id^="edit-comment-"] { padding: 0 6px 0; padding-inline-start: 46px; }
+
+/* tagging */
+#tag-container { width: 228px; height: 50px; padding: 5px; background-color: #eee; border: 1px solid #444; position: absolute; display: none; font-weight: bold; z-index: 10; }
+#tag-container #add_tag { width: 220px; }
+.album-rightcolumn .content-actions { height: 30px; margin-top: 15px; }
+#image-mod-container { margin-top: 5px; }
+.tag-photo { color: #327CBB; }
+
+/* image edit */
+.rotate-btn, #crop-photo-btn { background: url('/sites/all/themes/schoology_theme/images/image-edit.gif?6a6922e60f127556') no-repeat; width: 20px; display: block; /* rtl-processor:ignore */ float: left; height: 17px; padding: 3px; margin-inline-end: 3px; cursor: pointer; }
+[dir="rtl"] .rotate-btn, [dir="rtl"] #crop-photo-btn { float: right; }
+.rotate-right-btn { background-position: 0 -30px; }
+.rotate-right-btn:hover { background-position: 0 -120px; }
+.rotate-left-btn:hover { background-position: 0 -90px; }
+#crop-photo-btn { background-position: 0 -59px; }
+#crop-photo-btn:hover { background-position: 0 -149px; }
+.tag-photo { cursor: pointer; }
+#s-media-album-loading-overlay { background: url('/sites/all/themes/schoology_theme/images/ajax-loader.gif?6a6922e60f127556') no-repeat 50% 50% #eef3f8; }
+#s-media-album-tag-photo-btn-container { display: block; clear: both; padding-top: 10px; margin-bottom: 15px; }
+.add-tag-btn-container { margin-top: 3px; clear: both; }
+.add-tag-btn-container .click-submit, .crop-btns-inside .click-submit { font-size: 11px; padding: 4px 8px 3px; height: 14px; }
+.add-tag-btn-container .cancel-btn, .crop-btns-inside .cancel-btn { font-size: 11px; padding: 2px 5px; margin-inline-start: 0; }
+.crop-btns-inside { /* rtl-processor:ignore */ float: left; padding: 8px 10px; background: #eef3f8; width: 170px; }
+[dir="rtl"] .crop-btns-inside { float: right; }
+.crop-btns-inside p { margin-bottom: 5px; }
+#sUserAutocomplete-recipient-helper { display: none !important; }
+.name-wrapper span { color: #9EB5CE; font-weight: bold; }
+.tags-list { display: block; margin-bottom: 4px; }
+.user span span.tagged-user-name { all:unset; display: inline-block; max-width: 275px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; vertical-align: bottom;}
+.tags-container a.tagged-user-link { display: inline-block; max-width: 275px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+
+/* album create */
+#s-media-album-create-form { padding: 15px 20px; max-height: 350px; overflow-y: auto; }
+#s-media-album-create-form label { /* rtl-processor:ignore */ float: left; width: 105px; margin-top: 6px; margin-inline-end: 5px; }
+[dir="rtl"] #s-media-album-create-form label { float: right; }
+#s-media-album-create-form .addl-course label { float: none; width: auto; }
+#s-media-album-create-form label.option { float: none; width: auto; }
+#s-media-album-create-form #edit-title, #s-media-album-create-form textarea { width: 420px; }
+#s-media-album-create-form .form-item { margin-bottom: 10px; }
+#edit-setting-comments-wrapper, #edit-setting-studentpost-wrapper, #edit-pub-wrapper { padding-inline-start: 110px; margin-bottom: 5px !important; }
+#edit-pub-wrapper { padding-bottom: 20px; }
+#s-media-album-create-form #addl-courses { max-height: 134px; border: 1px solid #c7c7c7; position: static; width: 540px; margin-inline-start: 0; margin-bottom: 10px; }
+#s-media-album-create-form #addl-courses .form-item { margin: 0; padding: 0; }
+#s-media-album-create-form .addl-course { padding-bottom: 8px; }
+#s-media-album-create-form .addl-course label { margin-top: 0; }
+#s-media-album-create-form .autocomplete-wrapper { margin-inline-start: 0; width: 422px; }
+
+#center-top .page-title{ width: 650px; }
+
+/* New Media Blocks */
+.media-album-csm-course-switcher-wrapper { margin-bottom: 7px; }
+.media-album-csm-course-switcher-wrapper .select2-container { max-width: 100%; }
+.image-submission-block { display: block; border-top: 1px solid #eaeaea; }
+.image-submission-block-header { display: block; font-weight: bold; margin-top: 15px; }

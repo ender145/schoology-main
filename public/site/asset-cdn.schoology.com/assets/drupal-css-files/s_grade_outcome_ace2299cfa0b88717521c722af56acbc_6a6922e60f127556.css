@@ -1,0 +1,151 @@
+/* learning outcomes */
+#outcomes-table .outcomes-reorder-form, table.sticky-header .outcomes-reorder-form { /* rtl-processor:ignore */ float: right; display: none; }
+[dir="rtl"] #outcomes-table .outcomes-reorder-form, [dir="rtl"] table.sticky-header .outcomes-reorder-form { float: left; }
+.outcomes-tool-header .toolbar-edit { display: none; }
+#outcomes-table { width: 100%; }
+#outcomes-table td { padding: 15px 0; border-bottom: 1px solid #eaeaea; }
+#outcomes-table .sorting td.tabledrag { width: 20px; vertical-align: top; padding-top: 22px; }
+#outcomes-table td.bulk { width: 22px; vertical-align: top; padding-top: 18px; }
+#outcomes-table th { border-bottom: 1px solid #eaeaea; border-top: 1px solid #ddd; padding: 10px 0; text-align: start; }
+#outcomes-table .item-title { font-size: 14px; padding-inline-end: 20px; }
+#outcomes-table .item-description { margin-inline-start: 39px; margin-top: 3px; padding-inline-end: 20px; }
+.outcomes-admin-list .term-count { /* rtl-processor:ignore */ float: right; }
+[dir="rtl"] .outcomes-admin-list .term-count { float: left; }
+.outcomes-admin-list .outcomes-tool-header .toolbar-add span { padding: 0 21px 0; padding-inline-start: 24px; }
+.outcomes-admin-list .outcomes-tool-header .toolbar-add span span { width: 16px; height: 18px; /* rtl-processor:ignore */ float: left; background: url('/sites/all/themes/schoology_theme/images/icons_sprite_new.png?6a6922e60f127556') no-repeat 0 -848px; padding: 0; margin: 2px 7px 0; margin-inline-start: -23px; }
+[dir="rtl"] .outcomes-admin-list .outcomes-tool-header .toolbar-add span span { float: right; }
+.outcomes-tool-header { /* rtl-processor:ignore */ float: left; margin-inline-start: 10px; }
+[dir="rtl"] .outcomes-tool-header { float: right; }
+.outcomes-tool-header .action-links-wrapper { /* rtl-processor:ignore */ float: left; margin-inline-end: 5px; }
+[dir="rtl"] .outcomes-tool-header .action-links-wrapper { float: right; }
+.outcomes-tool-header .action-links-wrapper.toolbar-edit { padding-inline-end: 8px; margin-inline-end: 8px; border-inline-end: 1px solid #c7c7c7; }
+.outcomes-table-header { padding: 5px 0; /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] .outcomes-table-header { float: right; }
+.outcomes-header-description { font-size: 14px; margin-bottom: 10px; }
+.link-btn.toolbar-folder-up { padding: 0; height: auto; /* rtl-processor:ignore */ float: left; padding: 5px 3px; }
+[dir="rtl"] .link-btn.toolbar-folder-up { float: right; }
+.toolbar-folder-up span { background: url('/sites/all/themes/schoology_theme/images/btn-sprite.png?6a6922e60f127556') no-repeat scroll -1px -284px; display: block; width: 22px; height: 14px; text-indent: -9999px; }
+#outcomes-table .inline-icon { height: 32px; width: 32px; /* rtl-processor:ignore */ float: left; display: block; margin-inline-end: 7px; }
+[dir="rtl"] #outcomes-table .inline-icon { float: right; }
+.outcomes-admin-list .outcome-count { /* rtl-processor:ignore */ float: right; margin-top: 10px; }
+[dir="rtl"] .outcomes-admin-list .outcome-count { float: left; }
+.outcome-breadcrumbs { font-size: 18px; font-weight: bold; padding-bottom: 10px; }
+.outcome-breadcrumb-title { display: inline; }
+.outcome-breadcrumb-title .base-link {  }
+.outcome-breadcrumbs .arrow { background: url('/sites/all/themes/schoology_theme/images/blue-arrow-right.png?6a6922e60f127556') no-repeat 50%; margin: 0 4px; }
+.outcomes-admin-list { padding-top: 5px; }
+.outcomes-admin-list td.description .alignment-icon { background-position: 0 -960px; }
+.outcomes-admin-list td.description .outcome-icon { background-position: 0 -1000px; }
+.outcomes-admin-list td.description .folder-icon { background-position: 0 -1040px; }
+.breadcrumb-link .folder-icon { float: none; height: 19px; width: 18px; display: inline-block; background: url('/sites/all/themes/schoology_theme/images/icons_sprite_new.png?6a6922e60f127556') 0 -873px; }
+
+/* add outcome */
+.outcomes-admin-list .toolbar-edit .action-links { }
+.outcomes-admin-list .toolbar-edit .action-links-unfold { width: auto; }
+.outcomes-admin-list .toolbar-edit .action-links-unfold span { background: url('/sites/all/themes/schoology_theme/images/btn-sprite.png?6a6922e60f127556') no-repeat right -576px; width: auto; padding: 0 21px 0; padding-inline-start: 3px; margin-inline-end: 1px; line-height: 24px; color: #333; font-weight: bold; }
+[dir="rtl"] .outcomes-admin-list .toolbar-edit .action-links-unfold span { background-position-x: left; }
+.outcomes-admin-list .toolbar-edit .action-links-unfold.active span { background-position: right -594px; color: #fff; }
+[dir="rtl"] .outcomes-admin-list .toolbar-edit .action-links-unfold.active span { background-position-x: left; }
+.outcomes-admin-list .toolbar-edit .action-links a { background-image: url('/sites/all/themes/schoology_theme/images/btn-sprite.png?6a6922e60f127556'); background-repeat: no-repeat; background-position: 9px 0; }
+.outcomes-admin-list .toolbar-edit .action-links .action-move { background-position: 9px -278px; }
+.outcomes-admin-list .toolbar-edit .action-links .action-move:hover { background-position: 9px -298px; }
+.outcomes-admin-list .toolbar-edit .action-links .action-delete { background-position: 9px -76px; }
+.outcomes-admin-list .toolbar-edit .action-links .action-delete:hover { background-position: 9px -96px; }
+.outcomes-admin-list .toolbar-edit .action-links .action-copy { background-image: url('/sites/all/themes/schoology_theme/images/icons_sprite.png?6a6922e60f127556'); background-position: 13px -577px; }
+.outcomes-admin-list .toolbar-add .action-links a, .outcomes-admin-list .toolbar-add .action-links span { background-image: url('/sites/all/themes/schoology_theme/images/icons_sprite_new.png?6a6922e60f127556'); background-repeat: no-repeat; background-position: 12px 0; padding: 5px 25px 5px; padding-inline-start: 37px; }
+.outcomes-admin-list .toolbar-add .action-links .outcomes-add { background-position: 12px -845px; }
+.outcomes-admin-list .toolbar-add .action-links .folder-add { background-position: 12px -870px; }
+[dir="rtl"] .outcomes-admin-list .toolbar-add .action-links .outcomes-add, [dir="rtl"] .outcomes-admin-list .toolbar-add .action-links .folder-add  { background-position-x: calc(100% - 12px); }
+.outcomes-admin-list .toolbar-add .action-links { .alignment-btn, .usm-align-button { background-position: 12px -820px; float: none; } }
+[dir="rtl"] .outcomes-admin-list .toolbar-edit .action-links a { background-position-x: calc(100% - 12px); }
+[dir="rtl"] .outcomes-admin-list .toolbar-edit .action-links a:hover { background-position-x: calc(100% - 12px); }
+[dir="rtl"] .outcomes-admin-list .toolbar-add .action-links { .alignment-btn, .usm-align-button { background-position-x: calc(100% - 12px); }}
+.outcomes-admin-list .toolbar-add .folder-selector { border-bottom: 1px solid #ddd; margin: -1px 0 4px; padding-bottom: 4px; }
+.outcomes-admin-list .toolbar-options .action-links {  }
+.outcomes-admin-list .toolbar-options .action-links a { background-image: url('/sites/all/themes/schoology_theme/images/right-nav-icons.png?6a6922e60f127556'); background-repeat: no-repeat; background-position: 12px 0; }
+.outcomes-admin-list .toolbar-options .action-links .reorder-btn { background-position: 13px -145px; }
+.outcomes-admin-list .toolbar-options .action-links .arrange-btn { background-image: url('/sites/all/themes/schoology_theme/images/icons_sprite_materials.png?6a6922e60f127556'); background-position: 12px -198px; }
+.outcomes-admin-list .toolbar-options .action-links .import-btn { background-image: url('/sites/all/themes/schoology_theme/images/icons_sprite_new.png?6a6922e60f127556'); background-position: 12px -169px; }
+[dir="rtl"] .outcomes-admin-list .toolbar-options .action-links a { background-position-x: calc(100% - 12px); }
+.outcomes-admin-list .actionlinks .action-links { }
+.outcomes-admin-list .actionlinks .action-links a { }
+[dir="rtl"] .outcomes-admin-list .actionlinks .action-links a { background-position-x: calc(100% - 12px); }
+[dir="rtl"] .outcomes-admin-list .actionlinks .action-links a:hover { background-position-x: calc(100% - 12px); }
+.outcomes-admin-list .actionlinks .action-links .action-edit { background-position: 9px -36px; }
+.outcomes-admin-list .actionlinks .action-links .action-edit:hover { background-position: 9px -56px; }
+.outcomes-admin-list .actionlinks .action-links .action-move { background-position: 9px -278px; }
+.outcomes-admin-list .actionlinks .action-links .action-move:hover { background-position: 9px -298px; }
+.outcomes-admin-list .actionlinks .action-links .action-delete { background-position: 9px -76px; }
+.outcomes-admin-list .actionlinks .action-links .action-delete:hover { background-position: 9px -96px; }
+.outcomes-admin-list .actionlinks .action-links .action-copy { background-image: url('/sites/all/themes/schoology_theme/images/icons_sprite.png?6a6922e60f127556'); background-position: 13px -577px; }
+.outcomes-admin-list .empty { padding: 15px 0; text-align: center; }
+
+/* add learning outcome popup */
+#s-grade-outcome-add-element-form { padding: 15px 20px; }
+#s-grade-outcome-add-element-form .form-item { margin-bottom: 10px; }
+#s-grade-outcome-add-element-form #edit-title-wrapper label, #s-grade-outcome-add-element-form #edit-description-wrapper label { width: 100px; /* rtl-processor:ignore */ float: left; margin: 4px 5px 0; margin-inline-start: 0; }
+[dir="rtl"] #s-grade-outcome-add-element-form #edit-title-wrapper label, [dir="rtl"] #s-grade-outcome-add-element-form #edit-description-wrapper label { float: right; }
+#s-grade-outcome-add-element-form .form-text, #s-grade-outcome-add-element-form .form-textarea { width: 435px; }
+.popups-small #s-grade-outcome-add-element-form .form-text, .popups-small #s-grade-outcome-add-element-form .form-textarea { width: 290px; }
+#s-grade-outcome-add-element-form .form-textarea { height: 65px; }
+#s-grade-outcome-add-element-form #edit-description-wrapper label { /* rtl-processor:ignore */ float: left; margin: 4px 5px 0; margin-inline-start: 0; }
+[dir="rtl"] #s-grade-outcome-add-element-form #edit-description-wrapper label { float: right; }
+
+/* move learning outcome popup */
+.popups-box.move-outcome-popup { width: 350px; }
+.popups-box.move-outcome-popup .submit-buttons { width: 348px; }
+#s-grade-outcome-move-form { padding: 15px 20px; }
+#s-grade-outcome-move-form label { /* rtl-processor:ignore */ float: left; width: 96px; margin-top: 5px; }
+[dir="rtl"] #s-grade-outcome-move-form label { float: right; }
+#s-grade-outcome-move-form .form-select { width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* import learning outcomes - general */
+.popups-box.import-outcome-popup .popups-body { min-height: 100px; }
+.popups-box.import-outcome-popup form .item-list { padding-bottom: 0; }
+.import-outcome-popup .multistep-breadcrumbs { margin-bottom: 5px; }
+.import-outcome-popup .instructions-header { color: #9a9fa8; font-size: 13px; overflow: hidden; padding-bottom: 10px; border-bottom: 1px solid #eaeaea; }
+.import-outcome-popup .instructions-header p, .import-outcome-popup .instructions-header li { font-size: 13px; }
+.import-outcome-popup .instructions-header .description { margin: 10px 0; }
+.import-outcome-popup .instructions-header .instructions {  }
+.import-outcome-popup .instructions-table {  }
+.import-outcome-popup .instructions-left { /* rtl-processor:ignore */ float: left; width: 250px; }
+[dir="rtl"] .import-outcome-popup .instructions-left { float: right; }
+.import-outcome-popup .instructions-table .item-list { /* rtl-processor:ignore */ float: left; height: 70px; border: 1px solid #ddd; width: 250px; overflow-y: auto; margin: 10px 15px 15px; margin-inline-start: 0; }
+[dir="rtl"] .import-outcome-popup .instructions-table .item-list { float: right; }
+.import-outcome-popup .instructions-table .item-list li { list-style: disc; margin: 5px 0 5px; margin-inline-start: 20px; }
+.import-outcome-popup .instructions-table .asterisks { /* rtl-processor:ignore */ float: left; width: 250px; }
+[dir="rtl"] .import-outcome-popup .instructions-table .asterisks { float: right; }
+.import-outcome-popup .form-item { margin-bottom: 10px; }
+.import-outcome-popup #attachments-added-container .progressShowHide{ display: none; }
+
+/* import learning outcomes - Step 1 */
+.import-outcome-popup #edit-target-folder-wrapper { margin-top: 25px; }
+.import-outcome-popup #edit-target-folder-wrapper label, .import-outcome-popup #edit-upload-wrapper label { width: 135px; /* rtl-processor:ignore */ float: left; margin: 5px 5px 0; margin-inline-start: 0; font-size: 13px; }
+[dir="rtl"] .import-outcome-popup #edit-target-folder-wrapper label, [dir="rtl"] .import-outcome-popup #edit-upload-wrapper label { float: right; }
+.import-outcome-popup #edit-target-folder-wrapper label { width: auto; margin-inline-end: 15px; }
+.import-outcome-popup #edit-target-folder-wrapper select, .import-outcome-popup #edit-upload-wrapper select { width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.import-outcome-popup #edit-upload-wrapper .description { display: inline; margin-inline-start: 20px; }
+.import-outcome-popup #attachments-added-container { margin: 10px 5px 5px; }
+
+/* import learning outcomes - Step 2 */
+.import-outcome-popup #edit-has-headers-wrapper { margin: 0 0 10px; padding: 15px 0; border-bottom: 1px solid #eaeaea; }
+.import-outcome-popup #import-grade-outcomes-select-table { width: 100%; margin-bottom: 10px; table-layout: fixed; }
+.import-outcome-popup #import-grade-outcomes-select-table th { text-align: start; border-bottom: 1px solid #cedbe8; padding: 8px 0; }
+.import-outcome-popup #import-grade-outcomes-select-table td { padding: 10px 0 0; vertical-align: top; }
+.import-outcome-popup #import-grade-outcomes-select-table .form-item { margin: 0; }
+.import-outcome-popup #import-grade-outcomes-select-table select { width: auto; }
+
+/* import learning outcomes - Step 3 */
+.import-outcome-popup .preview-limit-warning { padding: 10px 0 5px; text-align: start; }
+.import-outcome-popup .grade-outcomes { margin-top: 10px; border-top: 1px solid #eaeaea; padding-top: 10px; max-height: 300px; overflow-y: auto; }
+.import-outcome-popup .grade-outcomes li { padding: 3px 0; }
+.import-outcome-popup .grade-outcomes .title { font-weight: bold; margin-inline-end: 5px; }
+.import-outcome-popup .grade-outcomes .description { margin-inline-start: 10px; }
+.import-outcome-popup #progress { margin: 10px 10px 0; }
+
+/* preview popup */
+.alignment-preview-popup .popups-body { padding: 10px 15px 15px; }
+.alignment-preview-popup .alignment-title { font-weight: bold; font-size: 14px; padding-bottom: 3px; }
+.alignment-preview-popup .alignment-description { margin-top: 10px; padding-top: 10px; border-top: 1px solid #eaeaea; }
+
+[dir="rtl"] .item-row-outcome .action-edit span:hover { background-position-x: unset;}

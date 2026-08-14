@@ -1,0 +1,256 @@
+#vals { height: 30px; display: none;}
+.recipient-helper { display: none; margin: -11px 0 0; margin-inline-start: 90px; font-size: 12px; color: #9a9fa8; padding: 8px; background: #f2f2f2; border: 1px solid #c7c7c7; width: 450px; position: absolute; }
+#edit-recipient-wrapper, #edit-subject-wrapper { margin-bottom: 10px; }
+.s-hide-left-nav #content-wrapper { padding: 0; }
+
+table.privatemsg-list {
+	width: 100%;
+	border-top: 1px solid #ddd;
+}
+
+.privatemsg-list td{
+	background: #fff;
+	height: 55px;
+	width: 35px;
+}
+.privatemsg-list .no-messages {
+	width: auto;
+	height: 200px;
+	text-align: center;
+	font-size: 12px;
+	color: #9a9fa8; border: none;
+}
+
+body.inbox-body-wrapper #center-top { border: none;}
+#privatemsg-list td.privatemsg-list-subject {	width: 89%;	vertical-align: middle; padding: 10px 0; }
+.privatemsg-list-subject p { color: #9a9fa8; }
+#privatemsg-list td.privatemsg-list-participants { width: 295px; }
+#privatemsg-list #more-actions a { margin-inline-end: 5px; }
+#edit-more-actions-1 { padding: 3px; height: 22px; width: 85px; border-color: #999; margin: 7px 5px 0; margin-inline-start: 7px; }
+
+.picture a { display: block; height: 46px;}
+
+td.privatemsg-list-participants .picture { padding: 10px 0; }
+
+.message-body p { margin: 5px 0; }
+.message-body .attachments { width: 100%; padding-top: 5px; }
+.thread-wrapper #privatemsg-new label { width: 65px; margin: 0; }
+
+.s_message_box .left-column { width: 60px; }
+.s_message_box div.bottom-border { border-bottom: 1px solid #cad2de; margin: 0 0 0; margin-inline-start: 240px; }
+.s_message_box .right-column { margin-inline-start: 240px; }
+
+.names-date { padding: 5px 0 0; padding-inline-start: 60px; }
+.names-date a { font-weight: normal; display: inline-block; max-width: 50%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; vertical-align: bottom;}
+.subject-link { font-size: 13px; }
+
+.privatemsg-list .messaging-tag-list { padding: 5px 0 0; padding-inline-start: 60px; }
+.privatemsg-list .messaging-tag-list-item { background: #f0f0f0; display: inline-block; margin: 0 5px 5px; margin-inline-start: 0; padding: 3px 7px; font-size: 11px; color: #9a9fa8; font-weight: normal; border: 0 none; }
+
+.privatemsg-list td { border-bottom: 1px solid #eaeaea; vertical-align: top; padding-top: 20px; }
+.privatemsg-list td .form-item { text-align: end; padding-inline-end: 10px; margin: 0; width: 39px; height: 20px; display: table-cell; vertical-align: middle; }
+.privatemsg-list .privatemsg-unread td .form-item { background: url('/sites/all/themes/schoology_theme/images/unread_icon.png?6a6922e60f127556') no-repeat 7px center; }
+[dir="rtl"] .privatemsg-list .privatemsg-unread td .form-item { background-position-x: 2.6em; }
+.privatemsg-list .privatemsg-unread td { background: #eef3f8; }
+.privatemsg-list tr:hover td { cursor: pointer; }
+.privatemsg-list tr:hover .subject-link { text-decoration: underline; }
+.privatemsg-list .no-messages-tr:hover td { cursor: default; }
+
+.privatemsg-list .form-item label.option input, .select-all input.form-checkbox {
+	top: 0; /* rtl-processor:ignore */ float: right;
+	margin-inline-start: 5px;
+}
+
+[dir="rtl"] .privatemsg-list .form-item label.option input, [dir="rtl"] .select-all input.form-checkbox { float: left;}
+
+
+.privatemsg-list td.delete-button {
+	padding-inline-end: 10px;
+	width: 14px;
+}
+
+#edit-more-actions-1-wrapper {
+	/* rtl-processor:ignore */
+	float: left;
+	margin: 0;
+}
+
+[dir="rtl"] #edit-more-actions-1-wrapper { float: right;}
+
+
+.s_message_box { /* rtl-processor:ignore */ float: left; width: 100%; }
+
+[dir="rtl"] .s_message_box { float: right;}
+
+.s_message_box.has_actions .message-view-row {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.s_message_box.has_actions .picture {
+	float: none;
+	flex: auto 0;
+}
+.s_message_box.has_actions .message-body {
+	padding-inline-start: 0;
+	flex: 1 1;
+}
+.s_message_actions {
+	width: 120px;
+	flex: auto 0;
+	padding-inline-start: 15px;
+	text-align: end;
+}
+.s_message_actions button {
+	opacity: 0.0;
+}
+.s_message_box.has_actions:hover .s_message_actions button,
+.s_message_box.has_actions:focus .s_message_actions button {
+	opacity: 0.5;
+}
+.s_message_box.has_actions .s_message_actions button:hover,
+.s_message_box.has_actions .s_message_actions button:focus,
+.s_message_box.has_actions .s_message_actions button:active {
+	opacity: 1.0;
+}
+
+/* Compose */
+form.compose-message fieldset div.form-item label { display: block; }
+#privatemsg-new fieldset { padding: 0; }
+#privatemsg-new #attachment-link { padding: 10px; }
+#privatemsg-new .progressContainer { margin-inline-start: -1px; margin-inline-end: -2px; }
+
+#privatemsg-new #edit-subject, #privatemsg-new #edit-recipient, #privatemsg-new #edit-body {
+	width: 501px;
+	padding: 5px;
+}
+#privatemsg-new #edit-recipient.ac_input { width: 100%; padding: 4px 0; }
+#content-wrapper #privatemsg-new { /* rtl-processor:ignore */ float: left; width: 98%; }
+#center-wrapper #privatemsg-new #attachments { padding: 0 6px 0; padding-inline-start: 96px; }
+[dir="rtl"] #content-wrapper #privatemsg-new { float: right;}
+#content-wrapper #privatemsg-new .submit-buttons { padding-inline-start: 66px; text-align: start; clear: both; }
+#content-wrapper #privatemsg-new .userlist_input { max-width: 507px; }
+#content-wrapper .compose-message #edit-body-wrapper { margin: 0 0 5px !important;}
+#content-wrapper .compose-message { padding: 25px 0 0; padding-inline-start: 30px; width: 603px; }
+#content-wrapper .compose-message #attachments { margin-inline-start: 92px !important; }
+#content-wrapper .compose-message #attachments.s-attachment-form-basic { margin-inline-start: 1px !important; }
+#content-wrapper .compose-message .recipient-helper { width: 501px; }
+#content-wrapper .compose-message #attachments-added-container { width: 511px !important; }
+#privatemsg-new #edit-body-wrapper textarea { min-height: 55px !important; }
+
+.message-view-row .picture { padding-inline-end: 15px; }
+.popups-box #privatemsg-new, .popups-box #s-messaging-send-to-group-form { padding: 15px 20px; font-size: 13px; }
+.popups-box #privatemsg-new #edit-subject, .popups-box #privatemsg-new #edit-recipient-wrapper .userlist_input, .popups-box #privatemsg-new #edit-body, .popups-box #s-messaging-send-to-group-form #edit-subject, .popups-box #s-messaging-send-to-group-form #edit-recipient-wrapper .userlist_input, .popups-box #s-messaging-send-to-group-form #edit-body { width: 100%; margin: 0 -6px; max-width: none; }
+.popups-box #s-messaging-send-to-group-form #edit-recipient-group-wrapper select { margin: 0 -6px; }
+.popups-box #privatemsg-new #edit-recipient-wrapper #ids, .popups-box #s-messaging-send-to-group-form #edit-recipient-wrapper #ids { margin-inline-end: -2px; }
+.popups-box #privatemsg-new #edit-body, .popups-box #s-messaging-send-to-group-form #edit-body { height: 120px !important; min-height: 120px !important; }
+#privatemsg-new #edit-body-wrapper, #privatemsg-new #edit-subject-wrapper, #privatemsg-new #edit-recipient-wrapper, #s-messaging-send-to-group-form #edit-body-wrapper, #s-messaging-send-to-group-form #edit-subject-wrapper, #s-messaging-send-to-group-form #edit-recipient-wrapper,  #s-messaging-send-to-group-form .realm-message-recipients { padding: 0 6px 0; padding-inline-start: 96px; }
+#privatemsg-new #edit-body-wrapper, #s-messaging-send-to-group-form #edit-body-wrapper { margin-bottom: 0; }
+#privatemsg-new label, #s-messaging-send-to-group-form label { /* rtl-processor:ignore */ float: left; width: 85px; margin: 5px 5px 0; margin-inline-start: -96px; }
+[dir="rtl"] #privatemsg-new label, [dir="rtl"] #s-messaging-send-to-group-form label { float: right;}
+#privatemsg-new #attachments, #s-messaging-send-to-group-form #attachments { padding: 0 2px 0; padding-inline-start: 91px; }
+#privatemsg-new #attachment-links, #s-messaging-send-to-group-form #attachment-links { margin: -6px 0 0; margin-inline-start: -1px; height: 32px; }
+#privatemsg-new #attachment-selector, #s-messaging-send-to-group-form #attachment-selector { /* rtl-processor:ignore */ float: left; width: 100%; border: 1px solid #c7c7c7; border-top: 1px dotted #c7c7c7; position: relative; background: #fff; }
+[dir="rtl"] #privatemsg-new #attachment-selector, [dir="rtl"] #s-messaging-send-to-group-form #attachment-selector { float: right;}
+#privatemsg-new #attachment-file, #s-messaging-send-to-group-form #attachment-file { margin: -1px -1px 0; border-top: 1px dotted #c7c7c7; padding-inline-end: 1px; /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] #privatemsg-new #attachment-file, [dir="rtl"] #s-messaging-send-to-group-form #attachment-file { float: right;}
+#privatemsg-new #attachment-file { width: 100%; }
+#privatemsg-new .progressContainer, #privatemsg-new .link-attachment, #privatemsg-new .attachment-block, #privatemsg-new .resource-attachment,
+#s-messaging-send-to-group-form .progressContainer, #s-messaging-send-to-group-form .link-attachment, #s-messaging-send-to-group-form .attachment-block, #s-messaging-send-to-group-form .resource-attachment { margin-inline-start: -1px; margin-inline-end: -2px; }
+
+/* End Compose */
+
+.message-title h2 { font-size: 14px; padding: 0 0 5px; }
+.message-title { margin: 15px 0 0; border-bottom: 1px solid #c7c7c7; padding-bottom: 10px; }
+#center-wrapper .message-participants {	border: none; padding: 0 70px 5px; padding-inline-start: 0; margin: 0; color: #9a9fa8; }
+
+.message-participants a:link, .message-participants a:visited { font-weight: normal; }
+
+#edit-recipient-wrapper div.userizer{
+	width: 354px;
+	display: block;
+	/* rtl-processor:ignore */
+	float: left;
+	margin-bottom: 15px;
+}
+
+[dir="rtl"] #edit-recipient-wrapper div.userizer { float: right;}
+
+
+#edit-recipient-wrapper .clearfix { display: block; }
+.single-recipient .single-user { display: block; }
+.single-recipient .name-wrapper { padding: 5px 0; display: inline-block; font-weight: bold; margin: 0 -6px; }
+thead.tableHeader-processed { display: none; }
+
+.privatemsg-list-subject .wrapper { padding-inline-start: 60px; white-space: nowrap; }
+
+.privatemsg-list thead, #privatemsg-list .sticky-header { display: none !important; }
+
+#privatemsg-list .submit-span-wrapper { display: none; }
+
+.userlist_input div{ width: 100%; }
+.userlist_input input{ width: 100%; }
+
+#tabs-wrapper span.clear { width: 783px; }
+
+#privatemsg-list table { position: relative; } /* fix for disappearing checkboxes when mouse hovers over tabs */
+
+#privatemsg-new .submit-buttons { padding-top: 10px; }
+.popups-box #privatemsg-new .submit-buttons { padding-top: 5px; }
+#privatemsg-new div.userlist_input { width: 507px; }
+.attachments-file-icon { /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] .attachments-file-icon { float: right;}
+.s-message-attachments-container p { margin: 0; }
+.s-message-attachments-container .attachments-link-left { /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] .s-message-attachments-container .attachments-link-left { float: right;}
+.s-message-attachments-container .attachments-link-left img { margin-inline-end: 10px; max-width: 90px;}
+.attachments-link { clear: both; }
+.youtube, .video-video { display: none; }
+.video-video embed { width: 455px; height: 265px; }
+.attachments-video-thumbnails-play { background: url('/sites/all/themes/schoology_theme/images/play-btn.png?6a6922e60f127556') no-repeat 85px bottom; position: absolute; height: 90px; width: 120px; cursor: pointer; }
+.attachments-video-summary p { display: none; }
+.video-summary-inner { color: #9a9fa8; }
+.attachments-link-summary p { /* rtl-processor:ignore */ float: left; width: 230px; }
+[dir="rtl"] .attachments-link-summary p { float: right;}
+.video-expanded .video-summary-inner, .video-expanded .attachments-video-title, .video-expanded p, .attachments-video-play-btn { display: none; }
+.attachments-video-left { /* rtl-processor:ignore */ float: left; max-width: 130px; }
+[dir="rtl"] .attachments-video-left { float: right;}
+.attachments-video-right { /* rtl-processor:ignore */ float: left; width: 335px; }
+[dir="rtl"] .attachments-video-right { float: right;}
+.attachments-video-thumbnails { margin-inline-end: 10px; }
+.attachments-file-icon { display: inline; }
+.attachments-file-thumbnail { /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] .attachments-file-thumbnail { float: right;}
+.attachments-file-thumbnail a { padding: 3px; display: block; border: 1px solid #c7c7c7; margin: 0 5px 5px; margin-inline-start: 0; line-height: 0; }
+.attachments-file-thumbnail a:hover { border-color: #666; }
+.attachments-files-images { /* rtl-processor:ignore */ float: left; width: 100%; }
+[dir="rtl"] .attachments-files-images { float: right;}
+
+/* top of page */
+
+
+/* top nav */
+#more-actions { padding: 10px 10px 10px; padding-inline-start: 56px; overflow: hidden; min-height: 26px; border-top: 1px solid #ddd; }
+.new-message-access #more-actions { border-top: 0 none; }
+#more-actions-checkbox { /* rtl-processor:ignore */ float: left; padding-inline-end: 5px; margin-inline-end: 10px; display: none; }
+[dir="rtl"] #more-actions-checkbox { float: right;}
+.new-message-access #more-actions-checkbox { border-inline-end: 1px solid #ddd; }
+#edit-selector-wrapper { position: absolute; margin: -30px 0 0; margin-inline-start: 26px; }
+.display-taw { display: block !important; }
+
+.delete2-btn { position: absolute; inset-inline-end: 15px; top: 110px; }
+.delete2-btn.search-delete-btn { position: absolute; inset-inline-end: 15px; top: 140px; }
+
+/* send message popup */
+#s-messaging-compose-enrollment-form { padding: 10px 25px 15px; }
+#s-messaging-compose-enrollment-form label { /* rtl-processor:ignore */ float: left; margin-top: 5px; width: 85px; margin-inline-end: 10px; }
+[dir="rtl"] #s-messaging-compose-enrollment-form label { float: right;}
+#s-messaging-compose-enrollment-form #edit-subject { width: 400px; }
+#s-messaging-compose-enrollment-form textarea { width: 400px; height: 58px; }
+#s-messaging-compose-enrollment-form p { padding: 5px; }
+#s-messaging-compose-enrollment-form .userlist_input { width: 402px; max-width: 402px; }
+#s-messaging-compose-enrollment-form .recipient-helper { margin-inline-start: 95px; width: 394px; }
+#s-messaging-compose-enrollment-form #attachments { padding-inline-start: 95px; width: 412px; }
+#s-messaging-compose-enrollment-form #attachment-links { margin: -4px 0 0 0; height: 32px; width: 410px; }
+#s-messaging-compose-enrollment-form #attachment-selector { /* rtl-processor:ignore */ float: left; width: 100%; border: 1px solid #c7c7c7; border-top: 1px dotted #c7c7c7; position: relative; background: #fff; }
+[dir="rtl"] #s-messaging-compose-enrollment-form #attachment-selector { float: right;}
+#s-messaging-compose-enrollment-form #edit-body-wrapper { margin-bottom: 0; }

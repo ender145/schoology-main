@@ -1,0 +1,52 @@
+
+      <html>
+        <head>
+          
+  <style>
+    #ltiPost {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #helperText {
+      animation: fade1 5s ease-out;
+      font-size: 1.5rem;
+    }
+    @keyframes fade1 {
+      0% { opacity: 0 }
+      25% { opacity: 0; }
+      100% { opacity: 1 }
+    }
+    #submitButton {
+      animation: fade2 10s ease-out;
+      background: none;
+      border: none;
+      color: blue;
+      text-decoration: underline;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    @keyframes fade2 {
+      0% { opacity: 0; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+
+        </head>
+        <body>
+          <form action="https://applications.zoom.us/lti/advantage/oauth/complete" name="ltiPost" id="ltiPost" method="post" encType="application/x-www-form-urlencoded">
+            <input type="hidden" id="id_token" name="id_token" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjlkNDM0OWM5NGYwOTg5YzQifQ.eyJpc3MiOiJodHRwczovL3NjaG9vbG9neS5zY2hvb2xvZ3kuY29tIiwiYXVkIjpbIjY4MzgyNzcwNzkiXSwic3ViIjoiMTA3MzcyODA5Ojo0ZDE2YmVkYWU4ODk0NGY5MDBiZDVmMGNiYzJkYTc2OSIsImV4cCI6MTc4NTg3MjE3NSwiaWF0IjoxNzg1ODcxNTc1LCJub25jZSI6IjlselJGQXZXUWoyZndwVmNSMmQ2VlEiLCJodHRwczovL3B1cmwuaW1zZ2xvYmFsLm9yZy9zcGVjL2x0aS9jbGFpbS9tZXNzYWdlX3R5cGUiOiJMdGlSZXNvdXJjZUxpbmtSZXF1ZXN0IiwiaHR0cHM6Ly9wdXJsLmltc2dsb2JhbC5vcmcvc3BlYy9sdGkvY2xhaW0vdmVyc2lvbiI6IjEuMy4wIiwiaHR0cHM6Ly9wdXJsLmltc2dsb2JhbC5vcmcvc3BlYy9sdGkvY2xhaW0vZGVwbG95bWVudF9pZCI6IjY4MzgyNzcwNzktMjE4MzQxMDA1NSIsImh0dHBzOi8vcHVybC5pbXNnbG9iYWwub3JnL3NwZWMvbHRpL2NsYWltL3RhcmdldF9saW5rX3VyaSI6Imh0dHBzOi8vYXBwbGljYXRpb25zLnpvb20udXMvbHRpL2FkdmFudGFnZSIsImh0dHBzOi8vcHVybC5pbXNnbG9iYWwub3JnL3NwZWMvbHRpL2NsYWltL3JvbGVzIjpbImh0dHA6Ly9wdXJsLmltc2dsb2JhbC5vcmcvdm9jYWIvbGlzL3YyL21lbWJlcnNoaXAjTGVhcm5lciJdLCJuYW1lIjoiV2lsbGlhbSBFY2tlcm1hbiIsImZhbWlseV9uYW1lIjoiRWNrZXJtYW4iLCJnaXZlbl9uYW1lIjoiV2lsbGlhbSIsImVtYWlsIjoiMTY3NjQ3MkBmY3Bzc2Nob29scy5uZXQiLCJodHRwczovL3B1cmwuaW1zZ2xvYmFsLm9yZy9zcGVjL2x0aS9jbGFpbS9jb250ZXh0Ijp7ImlkIjoiNzA0MDE0ODU4MyIsImxhYmVsIjoiRzcwNDAxNDg1ODMiLCJ0eXBlIjpbImh0dHA6Ly9wdXJsLmltc2dsb2JhbC5vcmcvdm9jYWIvbGlzL3YyL2NvdXJzZSNHcm91cCJdLCJ0aXRsZSI6IjA2MCAtIE1hZGlzb24gRXNwb3J0cyJ9LCJodHRwczovL3B1cmwuaW1zZ2xvYmFsLm9yZy9zcGVjL2x0aS9jbGFpbS90b29sX3BsYXRmb3JtIjp7Imd1aWQiOiIyMTgzNDEwMDU1Ojo1NjM5YzNlN2JhOGRlMzA1MDVhNTdkZTJhN2FmYzhhYSIsInByb2R1Y3RfZmFtaWx5X2NvZGUiOiJzY2hvb2xvZ3kiLCJ2ZXJzaW9uIjoiMS4wIiwibmFtZSI6IkZhaXJmYXggQ291bnR5IFB1YmxpYyBTY2hvb2xzIn0sImh0dHBzOi8vcHVybC5pbXNnbG9iYWwub3JnL3NwZWMvbHRpL2NsYWltL2xhdW5jaF9wcmVzZW50YXRpb24iOnsiZG9jdW1lbnRfdGFyZ2V0IjoiaWZyYW1lIiwibG9jYWxlIjoiZW4iLCJyZXR1cm5fdXJsIjoiaHR0cHM6Ly9sbXMuZmNwcy5lZHUvYXBwcy9sdGkvcmV0dXJuL2dyb3VwLzcwNDAxNDg1ODMifSwiaHR0cHM6Ly9wdXJsLmltc2dsb2JhbC5vcmcvc3BlYy9sdGkvY2xhaW0vbGlzIjp7InBlcnNvbl9zb3VyY2VkaWQiOiIxMDczNzI4MDk6OjRkMTZiZWRhZTg4OTQ0ZjkwMGJkNWYwY2JjMmRhNzY5In0sImh0dHBzOi8vcHVybC5pbXNnbG9iYWwub3JnL3NwZWMvbHRpL2NsYWltL2N1c3RvbSI6eyJ1c2VybmFtZSI6IjE2NzY0NzIifSwiaHR0cHM6Ly9wdXJsLmltc2dsb2JhbC5vcmcvc3BlYy9sdGkvY2xhaW0vcmVzb3VyY2VfbGluayI6eyJpZCI6IjY4MzgyNzcwNzktZ3JvdXAtNzA0MDE0ODU4MyIsInRpdGxlIjoiWm9vbSIsImRlc2NyaXB0aW9uIjoiWm9vbSAxLjMifX0.FjSSLBGoVn5vNA8P4yDvEwXPqqgi3vPkLRnzY6QSVyOESVVLZ8l1COuOIlaSBiv7IAwa5oD6pQ4RzNnMdac3o5CRCC50YE4PyTbFDs82A9O-FBDmYpRAqGtYan18gJmL8n_QqkNiMidzIezq_TKDi61c2WrQCybLGJJ2NUCaWGJLOhzX611Ka2Gd4J9dcfo8NAY_bFEeWv-RqGe91R0_I5p3PzBvd6dlNtaJ4h44SwFYQR88NDUCniPEWt0C6n3emFCBJAg_DAVP1IzU0aNEPumhAjE7WVmJvs0I8XAMNkqjz_miXMrsHSFJchNKkahHRvG_Ot08Drfr7wGlLtZUGA" /><input type="hidden" id="state" name="state" value="WpOhJ17_QxWHzvLjmARhog" />
+            <p id="helperText">
+              You are being redirected to Zoom
+            </p>
+            <input type="submit" id="submitButton" value="Click here if you are not automatically redirected"/>
+          </form>
+          <script type="text/javascript" id="submitScript">
+            setTimeout(function () {
+              document.getElementById('ltiPost').submit();
+            }, 0);
+          </script>
+        </body>
+      </html>
+    

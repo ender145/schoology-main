@@ -1,0 +1,63 @@
+.privatemsg-box-fb {
+  text-align       : start;
+}
+
+.left-column {
+  /* rtl-processor:ignore */
+  float       : left;
+  width       : 100px;
+}
+
+[dir="rtl"] .left-column { float : right; }
+
+
+.privatemsg-box-fb .avatar-fb {
+  margin      : 5px;
+  text-align  : center;
+}
+.privatemsg-box-fb .picture {
+  float    : none;
+  padding  : 0 0 0 0;
+}
+
+.name {
+  margin       : 0 15px 0px;
+  margin-inline-start       : 0px;
+  font-size   : 12px;
+  font-weight : bold;
+}
+.date {
+  color         : #777777;
+  font-size     : 9px;
+  margin       : 0px 15px 0pt;
+  margin-inline-start       : 0pt;
+}
+
+.clear-both {
+  clear       : both;
+}
+.bottom-border {
+  border-bottom: 1px solid #C5C5C5;
+  margin       : 0 0 10px;
+  margin-inline-start       : 250px;
+}
+.message-body { padding-inline-start       : 65px; }
+.message-view-row { border-bottom: 1px solid #eaeaea; padding: 10px 0; }
+
+.message-actions li {
+  list-style-type:none;
+  /* rtl-processor:ignore */
+  float:left;
+  padding:5px;
+  background-image:none;
+}
+
+[dir="rtl"] .message-actions li { float : right; }
+
+
+.thread-wrapper { width: 700px; margin-inline-start       : 1%; }
+#content-wrapper #privatemsg-new { width: 100%; }
+#content-wrapper #privatemsg-new #edit-body-wrapper { margin-top: 15px; padding       : 0 6px 0; padding-inline-start       : 71px; }
+#content-wrapper #privatemsg-new #edit-body-wrapper label { margin       : 6px 0 0; margin-inline-start       : -71px; }
+#content-wrapper #privatemsg-new #edit-body-wrapper textarea { width: 100%; margin: 0 -6px; min-height: 120px !important; }
+#content-wrapper #privatemsg-new #attachments { padding-inline-start       : 66px; }

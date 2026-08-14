@@ -1,0 +1,64 @@
+.info-tab { width: 100%; }
+.info-tab tr:last-child td, .info-tab tr:last-child th { border: none; }
+.h3-med { margin-top: 15px; }
+.invitees-list { max-height: 243px; overflow-y: auto; }
+.invitees-list td { border-bottom: 1px solid #eaeaea; }
+.invitees-list table { width: 100%; }
+.invitees-list .user-picture { padding: 7px 0 7px; padding-inline-start: 10px; width: 60px; }
+#right-column .h3-med.not-attending { border: none; }
+body .info-tab { border-color: #eaeaea; }
+body table.info-tab { table-layout: fixed; }
+.attendance-status { padding-bottom: 15px; color: #9a9fa8; font-size: 13px; }
+.attendance-status .event-icon { margin-top: -8px; }
+.attendance-status a { font-weight: normal; }
+.attendance-status .link-btn { font-weight: bold; }
+#rsvp-dropdown-options-wrapper { /* rtl-processor:ignore */ float: left; margin-inline-end: 5px; margin-top: -5px; }
+[dir="rtl"] #rsvp-dropdown-options-wrapper { float: right; }
+#rsvp-options-wrapper { /* rtl-processor:ignore */ float: left; margin-top: -5px; }
+[dir="rtl"] #rsvp-options-wrapper { float: right; }
+.options-rsvp-attend, .options-rsvp-decline { /* rtl-processor:ignore */ float: left; margin-inline-end: 5px; }
+[dir="rtl"] .options-rsvp-attend, [dir="rtl"] .options-rsvp-decline { float: right; }
+.action-links-wrapper .options-rsvp-attend, .action-links-wrapper .options-rsvp-decline { float: none; margin-inline-end: 0; }
+.action-links-wrapper .options-rsvp-attend a, .action-links-wrapper .options-rsvp-decline a { background-position: -9999px -9999px; }
+.action-links-wrapper .options-rsvp-attend.attending-active a, .action-links-wrapper .options-rsvp-decline.attending-active a { background-position: 9px -238px; font-weight: bold; }
+.options-rsvp-attend.attending-active:hover a, .options-rsvp-decline.attending-active:hover a { background-position: 9px -257px; }
+.options-rsvp-attend .link-btn span { display: inline-block; margin-inline-end: 5px; vertical-align: middle; height: 16px; width: 16px; background: url('/sites/all/themes/schoology_theme/images/icons_sprite_calendar.png?6a6922e60f127556') no-repeat 0 -774px; }
+.popups-large.popups-enrollments-mgr { width: 573px; }
+.popups-large.popups-enrollments-mgr .submit-buttons { width: 571px; }
+.right-username { height: 32px; display: table-cell; vertical-align: middle; padding-inline-start: 5px; }
+.right-username a { font-weight: normal; }
+.picture_block .right-users-li .picture { margin-bottom: 0; }
+.right-users li { margin-bottom: 5px; }
+.link-btn.invite { /* rtl-processor:ignore */ float: left; margin-inline-end: 4px; }
+[dir="rtl"] .link-btn.invite { float: right; }
+#s-event-RSVP-form { padding: 15px 20px; font-size: 11px; }
+.rsvp-event-name { font-weight: bold; font-size: 13px; }
+.rsvp-event-time { color: #9a9fa8; padding-inline-start: 20px; }
+.rsvp-event { padding: 10px 20px 5px; }
+.info-container-event { position: relative; width: 250px; }
+.content-top { /* rtl-processor:ignore */ float: right; width: 33%; margin-top: -22px; }
+[dir="rtl"] .content-top { float: left; }
+.content-top-wrapper { padding-inline-start: 21px; }
+#s-event-delete-form { padding: 10px 15px; }
+.invitees-list .picture, .invitees-list .user-name { height: 46px; }
+.info-container-event .action-guestlist a { background-image: url('/sites/all/themes/schoology_theme/images/icons_sprite.png?6a6922e60f127556'); background-position: 12px -108px; }
+.info-text .action-links-wrapper { /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] .info-text .action-links-wrapper { float: right; }
+#main .info-tab th { width: 99px; }
+.info-tab .attachments-video-right { width: 275px; }
+.info-tab .video-video embed { width: 415px; }
+.s-comments-post-form .form-textarea { font-size: 12px; }
+.s-comments-post-form .author-picture { display: block; }
+.s-comments-post-form #edit-comment-wrapper.form-item div { font-weight: 400 !important; line-height: normal !important; font-size: 12px !important; }
+.recurrence { color: #9a9fa8; }
+
+/* comments */
+div#s_comments .s_comments_level .s_comments_level { margin-inline-start: 42px !important; margin-inline-end: 30px !important; background: #f8f8f8; border: 1px solid #ddd; }
+div#s_comments .s_comments_level #comment-reply-form-wrapper { margin-inline-start: 42px; margin-inline-end: 30px; }
+.comment { border-bottom: 0 none; } /* Overwriting style inherited from s_edge.css */
+
+/* temp attachments */
+.video-video embed { width: 420px; height: 265px; }
+
+.unpub-event {padding-top:5px;}
+.invite.disabled {pointer-events:none;}

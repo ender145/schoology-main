@@ -1,0 +1,8 @@
+.rate-star { display: inline-block; width: 16px; height: 16px; background: url('/sites/all/themes/schoology_theme/images/star_sprite.png?6a6922e60f127556') no-repeat 0 -24px; margin-inline-end: 2px; }
+.rate-star.active { background-position: 0 0; }
+.rate-star.noclick { cursor: default; }
+.rate-star.half { background-position: 0 -48px; }
+
+#s-app-profile-other-screenshots-wrapper {
+    width: 600px;
+}

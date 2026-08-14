@@ -1,0 +1,63 @@
+#smart-box-realm-selection-wrapper #browse-realms { display: none; }
+.browse-realm-cluetip { position: absolute; inset-inline-end: 0; top: 30px; padding: 0 !important; }
+#browse-realm-button { width: 70px; text-align: center; padding: 5px 6px; height: 23px; background: url('/sites/all/themes/schoology_theme/images/btn-sprite.png?6a6922e60f127556') no-repeat scroll 50% -614px; border-inline-start: 1px solid #ddd; filter: brightness(0.6); }
+
+.calendar-popup-add #browse-realm-button { background-position: 50% -467px; }
+.calendar-popup-add #browse-realm-button:hover { border-color: #ddd; }
+#browse-realm-button:hover { background-position: 50% -467px; border-color: #bbb; }
+#edit-realms { border: none; width: 230px; /* rtl-processor:ignore */ float: left; padding: 4px 1px 4px; padding-inline-start: 4px; margin: 0 0 4px; margin-inline-start: -4px; background: none; }
+[dir="rtl"] #edit-realms { float: right; }
+#edit-realms-wrapper { margin: 0; }
+#realms-container { border: 1px solid #c7c7c7; padding: 4px 84px 0; padding-inline-start: 5px; width: 100%; margin: 0 0 7px; margin-inline-start: -3px; overflow: hidden; min-height: 21px; cursor: text; }
+#course-profile-updates #realms-container { min-height:28px; overflow:visible; display:inline-block; }
+#realms-container input:focus { outline: 0 none; }
+.selected-realm { /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] .selected-realm { float: right; }
+.selected-realm .name-wrapper { white-space: nowrap; color: #666; background: url('/sites/all/themes/schoology_theme/images/icons-sprite-tiny.png?6a6922e60f127556') no-repeat 5px 6px #f0f0f0; padding: 4px 0 4px !important; padding-inline-start: 20px !important; margin: 0 4px 4px; margin-inline-start: 0; display: inline-block; height: 14px;}
+.selected-realm .name-text { overflow: hidden; text-overflow:ellipsis; max-width:250px; display: inline-block; font-weight: normal; color: #666 !important; font-size: 13px; /* rtl-processor:ignore */ float:left; margin-top: -2px; margin-inline-start: -5px;}
+[dir="rtl"] .selected-realm .name-text { float: right; }
+.selected-realm .delete-selected { display: inline-block; /* rtl-processor:ignore */ float:left;}
+[dir="rtl"] .selected-realm .delete-selected { float: right; }
+.selected-realm.course .name-wrapper { background-position: 5px -33px; }
+.selected-realm.group .name-wrapper { background-position: 5px -14px; }
+.selected-realm.school .name-wrapper { background-position: 5px -54px; }
+.selected-realm span span { cursor: pointer; padding: 1px 5px; color: #ccc; font-family: var(--sgy-font-default); font-size: 10px; }
+#smart-box-realm-selection-wrapper .selected-realm .delete-selected { color: #666; }
+.selected-realm span span:hover { text-decoration: none; color: #777; }
+#smart-box-realm-selection-wrapper .selected-realm .delete-selected:hover {
+    box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.75);
+    background-color: #404040;
+    color: #fff; 
+}
+.selected-realm .name-wrapper:hover { cursor: default; }
+
+.browse-realm-popup { width: 550px; }
+.browse-realm-popup .popups-body-inner-has-buttons { width: 525px; }
+.browse-realm-popup .popups-buttons-inner { width: 548px; }
+.browser-realm-checkboxes { max-height: 120px; overflow-y: auto; border: 1px solid #c7c7c7; background: #fff; width: 410px; }
+.browse-realm-popup .browser-realm { padding-bottom: 10px; }
+.browse-realm-parent-checkbox.course label, .browse-realm-checkbox.group label, .browse-realm-checkbox.user label, .browse-realm-checkbox.school label { background: url('/sites/all/themes/schoology_theme/images/icons_sprite_realm.png?6a6922e60f127556') no-repeat 8px 8px; }
+[dir="rtl"] .browse-realm-parent-checkbox.course label { background-position-x: calc(100% - 8px); }
+.browse-realm-checkbox.group label { background-position: 8px -53px; }
+[dir="rtl"] .browse-realm-checkbox.group label { background-position-x: calc(100% - 8px); }
+.browse-realm-checkbox.user label { background-position: 8px -173px; }
+[dir="rtl"] .browse-realm-checkbox.user label { background-position-x: calc(100% - 8px); }
+.browse-realm-checkbox.school label { background-position: 8px -203px; }
+[dir="rtl"] .browse-realm-checkbox.school label { background-position-x: calc(100% - 8px); }
+.browse-realm-parent-checkbox .browse-realm-checkbox { padding-inline-start: 10px; }
+.browse-realm-checkbox label, .browse-realm-parent-checkbox label { padding: 8px 0 10px; padding-inline-start: 34px; display: block; overflow:hidden; text-overflow: ellipsis; max-width: 280px; white-space: nowrap;}
+.browse-realm-checkbox { border-bottom: 1px solid #eaeaea; }
+.browse-realm-checkbox:nth-of-type(1) { border-top: 1px solid #eaeaea; }
+.browse-realm-parent-checkbox { border-top: 1px solid #eaeaea; }
+.browse-realm-checkbox:last-child, .browse-realm-parent-checkbox label:last-child, .browse-realm-parent-checkbox:first-child { border-bottom: none; }
+.browser-realm-title { padding: 8px 0 3px; font-weight: bold; /* rtl-processor:ignore */ float: left; width: 90px; }
+[dir="rtl"] .browser-realm-title { float: right; }
+.browser-realm-checkboxes input { margin: 9px 0 0; margin-inline-start: 10px; /* rtl-processor:ignore */ float: left; }
+[dir="rtl"] .browser-realm-checkboxes input { float: right; }
+.browse-realm-popup .popups-body { background: #f2f2f2; }
+.browse-realm-popup .popups-body-inner { padding: 0 10px; text-align: start; }
+.browse-realm-checkbox.user { float: none; }
+.ac_results ul { width: 99.5%; }
+.is-home .course-realm-only, .is-home .parent-post { display: none; }
+#smart-box-realm-selection-wrapper { min-height: 31px; padding-inline-end: 88px; position: relative; margin: 0 -6px 0; margin-inline-start: -3px; }
+[dir="rtl"] .post-to-ac { margin-inline-start: 82px; }

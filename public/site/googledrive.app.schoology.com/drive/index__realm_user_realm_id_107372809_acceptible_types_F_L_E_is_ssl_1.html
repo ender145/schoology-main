@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" ng-app="googleDriveApp">
+<head>
+  <meta charset="utf-8">
+    <title>Google Drive</title>
+  <link type="text/css" rel="stylesheet" media="screen" href="/css/styles.css?126859" />
+<link type="text/css" rel="stylesheet" media="screen" href="/css/jquery-ui.css?126859" />
+</head>
+<body class="s-resources-view">
+<div class="content-page drive-list" ng-controller="GoogleDriveCtlr" id="google-drive-ctrl">
+  <div class="messages-wrapper" ng-show="messages.length > 0" style="display: none;">
+    <div class="messages-row {{msg.type}}" ng-repeat="msg in messages">
+      {{msg.text}}
+      <a ng-show="msg.isRetryable" class="error-retry-btn" ng-click="retry.play()" tabindex="0" s-enter>Retry Now</a>
+      <a ng-show="$first" ng-click="notifications.clear()" tabindex="0"><span class="close-btn"></span></a>
+    </div>
+  </div>
+  <div ng-show="showActiveTableLoader" class="ui-widget-overlay loading-overlay">
+    <img width="30" height="8" class="loading-image" src="/img/ajax-loader.gif">
+  </div>
+  <div ng-show="retry.showOverlay" class="ui-widget-overlay retry-overlay" style="display: none;">
+    <img ng-show="retry.showOverlayLoader" width="30" height="8" class="loading-image" src="/img/ajax-loader.gif">
+  </div>
+  <div class="content-title">
+    <!-- Google Drive Search: begin -->
+    <div class="google-drive-search-wrapper" ng-show="search.isEnabled" ng-cloak>
+      <div class="search-loader"
+           ng-show="search.loading">
+      </div>
+      <div class="search-box-wrapper">
+        <input type="text"
+               class="search-box-input"
+               placeholder="Search Google Drive"
+               ng-model="search.term"
+               s-enter="search.go()"
+        />
+        <div class="search-box-cancel"
+             ng-click="search.cancel()">
+        </div>
+      </div>
+      <div class="search-go"
+           ng-click="search.go()">
+      </div>
+    </div>
+    <!-- Google Drive Search: end -->
+
+    <span class="google-drive-logo"></span>Google Drive  </div>
+  <div class="content-header">
+        
+      <div class="action-toolbar" s-stick-header>
+        <!--// Edit menu -->
+        <div style="display: none" class="toolbar-action-list-wrapper" ng-show="checkedFiles.length > 0">
+          <div class="action-links-wrapper action-links-wrapper-expanded " id="toolbar-select" s-action-links-wrapper  tabindex="0"><div href="#" class="action-links-unfold "><span>Import</span></div><ul class="action-links " id="toolbar-select-list"><li class="action-select-import-file action-import" ng-show="showSelectMultiAction('file')"><span class="clickable" ng-click="selectMultiCopyTo('file')">Import File</span></li><li class="action-select-import-link action-import" ng-show="showSelectMultiAction('link')"><span class="clickable" ng-click="selectMultiCopyTo('link')">Import Link</span></li><li class="action-select-import-link-private action-import" ng-show="showSelectMultiAction('link_private')"><span class="clickable" ng-click="selectMultiCopyTo('link_private')">Import Private Link</span></li></ul></div>        </div>
+
+        <div class="toolbar-add-list-wrapper">
+          <div class="action-links-wrapper action-links-wrapper-expanded " id="toolbar-add" s-action-links-wrapper  tabindex="0"><div href="#" class="action-links-unfold "><span>Add Resources</span></div><ul class="action-links " id="toolbar-add-list"><li class="action-add-google-files"><span class="clickable select-drive-files" ng-disabled="!googleDrivePickerInitialized" ng-click="selectGoogleDriveFiles()">Add files from Google Drive</span></li><li class="action-add-google-doc"><span class="clickable google-doc-add document" ng-click="addGoogleDoc('doc')">Create Google Docs</span></li><li class="action-add-google-spreadsheet"><span class="clickable google-doc-add spreadsheet" ng-click="addGoogleDoc('spreadsheet')">Create Google Sheets</span></li><li class="action-add-google-presentations"><span class="clickable google-doc-add presentations" ng-click="addGoogleDoc('presentations')">Create Google Slides</span></li><li class="action-add-google-drawing"><span class="clickable google-doc-add drawing" ng-click="addGoogleDoc('drawing')">Create Google Drawings</span></li></ul></div>        </div>
+
+        <div class="toolbar-options-list-wrapper">
+          <div class="action-links-wrapper action-links-wrapper-expanded " id="toolbar-options" s-action-links-wrapper  tabindex="0"><div href="#" class="action-links-unfold "><span>Options</span></div><ul class="action-links " id="toolbar-options-list"><li class="action-account-settings"><a class="clickable" href="/index.php/drive/account_settings">Account Settings</a></li></ul></div>        </div>
+
+        <div style="display: none;" class="toolbar-options-list-wrapper link-btn return" ng-show="showToolbarUpBtn">
+          <span class="clickable" ng-click="breadCrumbs.goBack()">Up</span>
+        </div>
+      </div>
+
+      </div>
+  <div class="content-body">
+    <table class="drive-list-table">
+      <thead class="file-header-row">
+      <tr>
+        <th class="drive-list-cell drive-list-header file-item-checkbox"><input autocomplete='off' type="checkbox" ng-model="selectAllCheckbox" ng-click='updateSelected($event)' /></th>
+        <th class="drive-list-cell drive-list-header file-item-icon"></th>
+        <th colspan="2" class="drive-list-cell drive-list-header file-item-title">Title</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-show="!search.isActive() && files.length == 0" style="display: none;">
+        <td colspan="4">
+          <div class="empty-message">There are currently no items in this collection</div>
+        </td>
+      </tr>
+      <tr ng-show="search.noResultsFound()">
+        <td class="drive-list-cell"></td>
+        <td class="drive-list-cell"></td>
+        <td colspan="2" class="drive-list-cell no-search-results-cell">
+          No Results Found        </td>
+      </tr>
+      <!--// Start list files and folders -->
+      <tr class="file-item-row" ng-repeat="file in files" ng-show="files.length > 0" style="display: none;" ng-class="itemIsSelectedClass(file.ng.isChecked)">
+        <td class="drive-list-cell file-item-checkbox">
+          <div ng-show="file.ng.showCheckbox">
+            <input autocomplete='off' type="checkbox" value="{{file.id}}" ng-model="file.ng.isChecked" ng-click='updateSelected($event, file)'/>
+          </div>
+        </td>
+        <td class="drive-list-cell file-item-icon file-icon-{{file.fileExtension}}"><img class="drive-file-icon-image" ng-src="{{file.iconLink}}" /></td>
+        <td class="drive-list-cell file-item-title">
+          <span class="clickable" ng-click="goTo(file)">{{file.title}}</span>
+          <span class="shared" style="display: none;" ng-show="file.shared">Shared</span>
+        </td>
+        <td class="drive-list-cell file-item-actions">
+          <div ng-show="file.ng.showRowLoader"><img width="30" height="8" class="loading-image" src="/img/ajax-loader.gif"></div>
+          <div class="toolbar-options-list-wrapper" ng-show="file.ng.showActionLinks">
+            <div class="action-links-wrapper action-links-wrapper-junior aligned-right" s-action-links-wrapper ><div href="#" class="action-links-unfold "><span></span></div><ul class="action-links "><li class="action-edit" ng-show="file.ng.showActionLinkEdit"><span class="clickable google-doc-edit" ng-click="goTo(file)">Edit</span></li><li class="action-delete" ng-show=false><span class="clickable google-doc-delete" ng-click="deleteItem(file)">Delete</span></li><li class="action-import-file action-import" ng-show="showCopyAction(file, 'file')"><span class="clickable google-doc-import-file" ng-click="importContent(file, 'file')">Import File</span></li><li class="action-import-link action-import" ng-show="showCopyAction(file, 'link')"><span class="clickable google-doc-import-link" ng-click="importContent(file, 'link')">Import Link</span></li><li class="action-import-link-private action-import" ng-show="showCopyAction(file, 'link_private')"><span class="clickable google-doc-import-link-private" ng-click="importContent(file, 'link_private')">Import Private Link</span></li></ul></div>          </div>
+        </td>
+      </tr>
+      <!--// End list files and folders -->
+
+      <tr>
+        <td style="display: none" colspan="4" class="empty-message" ng-show="!search.isActive() && !showToolbarUpBtn && googleDrivePickerInitialized">
+          Is something missing?          <a href="#" ng-click="selectGoogleDriveFiles()">Add files from Google Drive</a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <div ng-show="!showActiveTableLoader && loadMoreParams.nextPageToken != ''" style="display: none;">
+      <span class="ajax-load-more clickable" ng-click="loadMore()" s-load-more="loadMore()">Load More</span>
+    </div>
+
+  </div>
+  <div id="dialog-modal" style="display: none;">
+    <div class="popup-loader" ng-show="showPopupLoader"><img width="30" height="8" class="loading-image" src="/img/ajax-loader.gif"></div>
+    <div ng-include src="popup.url" onload='popupLoaded()'></div>
+  </div>
+</div>
+<script type="text/javascript">
+var CI = {};
+CI.lang = {"general_delete":"Delete","general_delete_confirm":"Are you sure you want to delete this file","general_select_files":"Select files to share with Schoology","general_files_missing":"Is something missing?","general_cancel":"Cancel","general_submit":"Submit","general_edit":"Edit","general_import_file":"Import File","general_import_link":"Import Link","general_import_embed":"Import Embed","general_import_link_private":"Import Private Link","general_title":"Title","general_load_more":"Load More","general_import":"Import","general_import_note":"\u003Cstrong\u003ENote:\u003C\/strong\u003E Navigating away from this page will cancel the import.","general_import_status_title":"Importing","general_import_status_of":"of","general_import_status_files":"files","general_import_status_completed":"completed","general_drive_toolbar_select":"Select","general_drive_toolbar_add":"Add Resources","general_drive_toolbar_add_files":"Add files from Google Drive","general_drive_toolbar_create_doc":"Create Google Docs","general_drive_toolbar_create_sheets":"Create Google Sheets","general_drive_toolbar_create_slides":"Create Google Slides","general_drive_toolbar_create_drawing":"Create Google Drawings","general_drive_toolbar_create_folder":"Create Folder","general_drive_toolbar_options":"Options","general_drive_toolbar_options_account":"Account Settings","general_drive_toolbar_up":"Up","general_drive_search_placeholder":"Search Google Drive","general_drive_search_no_results":"No Results Found","general_drive_access_denied":"Google Drive: access denied.","general_drive_empty_collection":"There are currently no items in this collection","general_drive_empty_folder":"There are currently no items in this folder","general_drive_import_failed":"There was a problem with your selection. Please try again in a few moments.","general_drive_import_insufficient_permissions":"!action: You do not have sufficient permissions to perform this action.","general_account_status_connected":"Connected as @email","general_account_status_not_connected":"You are not connected to Google Drive.","general_account_change_account":"Sign in to a different account","general_account_sign_in":"Sign in to your account","general_account_connect":"Connect","general_account_cancel":"Cancel","general_account_logout":"Logout","general_account_school_logout":"Why can\u0027t I log out?","general_account_school_logout_tooltip":"This account is linked to school-wide settings configured by your system administrator","general_account_logout_confirm":"Are you sure you want to log out of this Google Drive account","general_account_options_school":"School Account","general_account_options_other":"Other Account","general_account_connection_error":"Access Denied","general_account_school_connection_error":"An error occurred when logging in to your school-wide account.\u003C\/br\u003E Please contact your system admin to confirm that your primary email is setup correctly.","general_config_instructions":"In Google Apps domains, the domain administrator can grant to third party applications domain-wide access to its users\u0027 data \u2014 this is referred as domain-wide delegation of authority. The following tasks have to be performed by an administrator of the Google Apps domain","general_config_step_1":"Go to your Google Apps Admin console. The URL should look like this","general_config_step_2":"Go to Security controls \u003E Advanced Settings","general_config_step_3":"Under Authentication select \u0022Manage third party OAuth Client access\u0022","general_config_step_4":"In the Client name field enter","general_config_step_5":"In the One or More API Scopes field enter","general_config_step_6":"Click the Authorize button","general_config_enabled_domain_wid_access":"Enable Domain-Wide Access","general_config_enable_tooltip":"Users must have a primary email setup within Account Settings. These emails must match between Schoology and Google.","general_config_save":"Save Settings","general_config_save_msg":"Your changes have been saved.","general_generic_error":"An error has occurred","google_drive_api_rate_limit":"It seems like Google hasn\u0027t had their cup of coffee yet today. We\u0027re having a hard time getting in touch with them.","google_drive_api_retry":"Thanks for your patience. We\u0027re trying to reconnect.","google_drive_api_retry_button":"Retry Now","general_google_connect":"Sign in with Google","general_shared":"Shared","logout_session_timeout":"Session timeout. Refresh the page and try logging out again within five minutes."};
+CI.settings = {"page":{"basepath":"\/","title":"Google Drive","context_hints":{"is_mobile":false,"is_import_view":false,"is_editor_insert":false},"locale":"en","appid":"1025105093939","devkey":"AIzaSyD5-S34nsq07-TVrYDO1Nlmc5YbvfGu4Ok","sitebase":"https:\/\/lms.fcps.edu"},"google_drive_search":{"is_enabled":true,"is_auto":true},"google_drive_retry":{"timeout":5}};
+</script>
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js?126859"></script>
+<script type="text/javascript" src="/js/javascript.js?126859"></script>
+<script type="text/javascript" src="/js/ng/lib/angular/angular.js?126859"></script>
+<script type="text/javascript" src="/js/ng/js/s-common.js?126859"></script>
+<script type="text/javascript" src="/js/jquery.sactionlinks.js?126859"></script>
+<script type="text/javascript" src="/js/jquery-ui.js?126859"></script>
+<script type="text/javascript" src="/js/jquery.tipsy.js?126859"></script>
+<script type="text/javascript" src="/js/lodash.js?126859"></script>
+<script type="text/javascript" src="/js/ng/js/google-drive-app.js?126859"></script>
+  <script type="application/javascript">
+    function googleApiOnLoad() {
+      setTimeout(() => {
+        const scope = angular.element(document.getElementById('google-drive-ctrl')).scope();
+        if (scope) {
+          scope.$apply(() => {
+            scope.googleApiOnLoad();
+          });
+        } else {
+          console.error('Google Picker API did not load');
+        }
+      }, 0);
+    }
+  </script>
+  <script async deferred src="https://apis.google.com/js/api.js" onload="googleApiOnLoad()"></script>
+  <script async deferred src="https://accounts.google.com/gsi/client" ></script>
+</body>
+</html>
